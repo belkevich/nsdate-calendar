@@ -1,19 +1,19 @@
 //
 //  NSDate+Days.h
-//  hairsalon
+//  NSDate+Calendar
 //
 //  Created by Belkevich Alexey on 3/16/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 okolodev. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface NSDate (Days)
 
-- (NSDate *)datePreviousDay;
-- (NSDate *)dateNextDay;
-- (NSDate *)datePreviousWeek;
-- (NSDate *)dateNextWeek;
-- (NSDate *)dateByAddingDays:(NSInteger)dayCount;
+- (NSDate *)dateToday;
+- (NSDate *)dateYesterday;
+- (NSDate *)dateTomorrow;
+- (NSDate *)dateWeekAgo;
+- (NSDate *)dateWeekAhead;
 
 @end

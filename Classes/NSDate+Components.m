@@ -1,17 +1,16 @@
 //
 //  NSDate+Components.m
-//  hairsalon
+//  NSDate+Calendar
 //
 //  Created by Belkevich Alexey on 3/28/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 okolodev. All rights reserved.
 //
 
 #import "NSDate+Components.h"
 
 @implementation NSDate (Components)
 
-#pragma mark -
-#pragma mark actions
+#pragma mark - public
 
 - (NSDateComponents *)dateComponentsTime
 {
@@ -39,13 +38,7 @@
     return [self dateComponents:components];
 }
 
-- (NSDateComponents *)dateComponentsWeekOfYear
-{
-    NSUInteger components = (NSWeekOfYearCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
-    return [self dateComponents:components];
-}
-
-#pragma mark 
+#pragma mark - private
 
 - (NSDateComponents *)dateComponents:(NSUInteger)components
 {

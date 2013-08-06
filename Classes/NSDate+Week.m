@@ -1,9 +1,9 @@
 //
 //  NSDate+Week.m
-//  hairsalon
+//  NSDate+Calendar
 //
 //  Created by Belkevich Alexey on 3/28/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 okolodev. All rights reserved.
 //
 
 #import "NSDate+Week.h"
@@ -11,8 +11,7 @@
 
 @implementation NSDate (Week)
 
-#pragma mark -
-#pragma mark actions
+#pragma mark - public
 
 - (NSDate *)dateWeekStart
 {
@@ -48,42 +47,7 @@
     return [date dateWeekEnd];
 }
 
-+ (NSUInteger)weekCountInYear:(NSUInteger)year
-{
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [NSDateComponents new];
-    components.day = 31;
-    components.month = 12;
-    components.year = year;
-    components.yearForWeekOfYear = year;
-    NSDate *date = [calendar dateFromComponents:components];
-    [components release];
-    NSUInteger componentsArgs = (NSWeekCalendarUnit | NSWeekOfYearCalendarUnit | NSYearCalendarUnit |
-                                 NSYearForWeekOfYearCalendarUnit);
-    components = [calendar components:componentsArgs fromDate:date];
-    if (components.yearForWeekOfYear > year)
-    {
-        date = [date datePreviousWeekStart];
-        components = [calendar components:componentsArgs fromDate:date];
-    }
-    return components.week;
-}
-
-+ (NSDate *)dateWithWeek:(NSUInteger)week inYear:(NSUInteger)year
-{
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [NSDateComponents new];
-    components.week = week;
-    components.weekday = 1;
-    components.year = year;
-    components.yearForWeekOfYear = year;
-    NSDate *date = [calendar dateFromComponents:components];
-    [components release];
-    return date;
-}
-
-#pragma mark -
-#pragma mark workflow
+#pragma mark - private
 
 - (NSDate *)dateWithDayOfWeek:(NSInteger)weekDay
 {

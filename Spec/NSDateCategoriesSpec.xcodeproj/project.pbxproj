@@ -12,16 +12,14 @@
 		FA3A3CE917ABD59C00E34F28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CE817ABD59C00E34F28 /* Foundation.framework */; };
 		FA3A3CEB17ABD59C00E34F28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CEA17ABD59C00E34F28 /* CoreGraphics.framework */; };
 		FA3A3CF117ABD59C00E34F28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA3A3CEF17ABD59C00E34F28 /* InfoPlist.strings */; };
-		FA3A3CF317ABD59C00E34F28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3CF217ABD59C00E34F28 /* main.m */; };
+		FA3A3CF317ABD59C00E34F28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3CF217ABD59C00E34F28 /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FA3A3CF917ABD59D00E34F28 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3A3CF817ABD59D00E34F28 /* Default.png */; };
 		FA3A3CFB17ABD59D00E34F28 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3A3CFA17ABD59D00E34F28 /* Default@2x.png */; };
 		FA3A3CFD17ABD59D00E34F28 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3A3CFC17ABD59D00E34F28 /* Default-568h@2x.png */; };
-		FA3A3D1117ABD7DA00E34F28 /* NSDate+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3D0617ABD7DA00E34F28 /* NSDate+Compare.m */; };
 		FA3A3D1217ABD7DA00E34F28 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3D0817ABD7DA00E34F28 /* NSDate+Components.m */; };
-		FA3A3D1317ABD7DA00E34F28 /* NSDate+DateWithString.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3D0A17ABD7DA00E34F28 /* NSDate+DateWithString.m */; };
 		FA3A3D1417ABD7DA00E34F28 /* NSDate+Days.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3D0C17ABD7DA00E34F28 /* NSDate+Days.m */; };
-		FA3A3D1517ABD7DA00E34F28 /* NSDate+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3D0E17ABD7DA00E34F28 /* NSDate+Round.m */; };
 		FA3A3D1617ABD7DA00E34F28 /* NSDate+Week.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3D1017ABD7DA00E34F28 /* NSDate+Week.m */; };
+		FA819D6017B1376D0023C17E /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA819D5F17B1376D0023C17E /* ExampleSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,18 +36,13 @@
 		FA3A3CF817ABD59D00E34F28 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FA3A3CFA17ABD59D00E34F28 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FA3A3CFC17ABD59D00E34F28 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FA3A3D0517ABD7DA00E34F28 /* NSDate+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Compare.h"; sourceTree = "<group>"; };
-		FA3A3D0617ABD7DA00E34F28 /* NSDate+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Compare.m"; sourceTree = "<group>"; };
 		FA3A3D0717ABD7DA00E34F28 /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
 		FA3A3D0817ABD7DA00E34F28 /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Components.m"; sourceTree = "<group>"; };
-		FA3A3D0917ABD7DA00E34F28 /* NSDate+DateWithString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateWithString.h"; sourceTree = "<group>"; };
-		FA3A3D0A17ABD7DA00E34F28 /* NSDate+DateWithString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateWithString.m"; sourceTree = "<group>"; };
 		FA3A3D0B17ABD7DA00E34F28 /* NSDate+Days.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Days.h"; sourceTree = "<group>"; };
 		FA3A3D0C17ABD7DA00E34F28 /* NSDate+Days.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Days.m"; sourceTree = "<group>"; };
-		FA3A3D0D17ABD7DA00E34F28 /* NSDate+Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Round.h"; sourceTree = "<group>"; };
-		FA3A3D0E17ABD7DA00E34F28 /* NSDate+Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Round.m"; sourceTree = "<group>"; };
 		FA3A3D0F17ABD7DA00E34F28 /* NSDate+Week.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Week.h"; sourceTree = "<group>"; };
 		FA3A3D1017ABD7DA00E34F28 /* NSDate+Week.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Week.m"; sourceTree = "<group>"; };
+		FA819D5F17B1376D0023C17E /* ExampleSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +116,7 @@
 		FA3A3D0317ABD7B200E34F28 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
+				FA819D5F17B1376D0023C17E /* ExampleSpec.mm */,
 			);
 			name = Spec;
 			sourceTree = "<group>";
@@ -130,16 +124,10 @@
 		FA3A3D0417ABD7DA00E34F28 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FA3A3D0517ABD7DA00E34F28 /* NSDate+Compare.h */,
-				FA3A3D0617ABD7DA00E34F28 /* NSDate+Compare.m */,
 				FA3A3D0717ABD7DA00E34F28 /* NSDate+Components.h */,
 				FA3A3D0817ABD7DA00E34F28 /* NSDate+Components.m */,
-				FA3A3D0917ABD7DA00E34F28 /* NSDate+DateWithString.h */,
-				FA3A3D0A17ABD7DA00E34F28 /* NSDate+DateWithString.m */,
 				FA3A3D0B17ABD7DA00E34F28 /* NSDate+Days.h */,
 				FA3A3D0C17ABD7DA00E34F28 /* NSDate+Days.m */,
-				FA3A3D0D17ABD7DA00E34F28 /* NSDate+Round.h */,
-				FA3A3D0E17ABD7DA00E34F28 /* NSDate+Round.m */,
 				FA3A3D0F17ABD7DA00E34F28 /* NSDate+Week.h */,
 				FA3A3D1017ABD7DA00E34F28 /* NSDate+Week.m */,
 			);
@@ -248,12 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3A3CF317ABD59C00E34F28 /* main.m in Sources */,
-				FA3A3D1117ABD7DA00E34F28 /* NSDate+Compare.m in Sources */,
 				FA3A3D1217ABD7DA00E34F28 /* NSDate+Components.m in Sources */,
-				FA3A3D1317ABD7DA00E34F28 /* NSDate+DateWithString.m in Sources */,
 				FA3A3D1417ABD7DA00E34F28 /* NSDate+Days.m in Sources */,
-				FA3A3D1517ABD7DA00E34F28 /* NSDate+Round.m in Sources */,
 				FA3A3D1617ABD7DA00E34F28 /* NSDate+Week.m in Sources */,
+				FA819D6017B1376D0023C17E /* ExampleSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB806A60F67E4DC691C293D0 /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDateCategoriesSpec/NSDateCategoriesSpec-Prefix.pch";
 				INFOPLIST_FILE = "NSDateCategoriesSpec/NSDateCategoriesSpec-Info.plist";
@@ -341,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB806A60F67E4DC691C293D0 /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDateCategoriesSpec/NSDateCategoriesSpec-Prefix.pch";
 				INFOPLIST_FILE = "NSDateCategoriesSpec/NSDateCategoriesSpec-Info.plist";
