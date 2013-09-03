@@ -12,9 +12,11 @@
 
 - (NSDate *)dateWeekStart;
 - (NSDate *)dateWeekEnd;
-- (NSDate *)datePreviousWeekStart;
-- (NSDate *)datePreviousWeekEnd;
-- (NSDate *)dateNextWeekStart;
-- (NSDate *)dateNextWeekEnd;
+- (NSDate *)dateWeekAgo;
+- (NSDate *)dateWeekAhead;
+- (NSDate *)dateWeekAgoStart;
+- (NSDate *)dateWeekAgoEnd;
+- (NSDate *)dateWeekAheadStart;
+- (NSDate *)dateWeekAheadEnd;
 
 @end

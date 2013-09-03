@@ -14,7 +14,7 @@
 
 - (NSDateComponents *)dateComponentsTime
 {
-    NSUInteger components = (NSHourCalendarUnit | NSMinuteCalendarUnit);
+    NSUInteger components = (NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit);
     return [self dateComponents:components];
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "NSDate+Week.h"
+#import "NSDate+Day.h"
 #import "NSDate+Components.h"
 
 @implementation NSDate (Week)
@@ -15,6 +16,7 @@
 
 - (NSDate *)dateWeekStart
 {
+#warning change to dateWithAddWeek:1
     return [self dateWithDayOfWeek:1];
 }
 
@@ -23,25 +25,35 @@
     return [self dateWithDayOfWeek:7];
 }
 
-- (NSDate *)datePreviousWeekStart
+- (NSDate *)dateWeekAgo
+{
+    return [self dateByAddingDays:-7];
+}
+
+- (NSDate *)dateWeekAhead
+{
+    return [self dateByAddingDays:7];
+}
+
+- (NSDate *)dateWeekAgoStart
 {
     NSDate *date = [self dateWithAddWeek:-1];
     return [date dateWeekStart];
 }
 
-- (NSDate *)datePreviousWeekEnd
+- (NSDate *)dateWeekAgoEnd
 {
     NSDate *date = [self dateWithAddWeek:-1];
     return [date dateWeekEnd];
 }
 
-- (NSDate *)dateNextWeekStart
+- (NSDate *)dateWeekAheadStart
 {
     NSDate *date = [self dateWithAddWeek:1];
     return [date dateWeekStart];
 }
 
-- (NSDate *)dateNextWeekEnd
+- (NSDate *)dateWeekAheadEnd
 {
     NSDate *date = [self dateWithAddWeek:1];
     return [date dateWeekEnd];

@@ -1,5 +1,5 @@
 //
-//  NSDate+Days.h
+//  NSDate+Day.h
 //  NSDate+Calendar
 //
 //  Created by Belkevich Alexey on 3/16/12.
@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate (Days)
+@interface NSDate (Day)
+
+@property (nonatomic, readonly) NSInteger day;
 
 - (NSDate *)dateToday;
 - (NSDate *)dateYesterday;
 - (NSDate *)dateTomorrow;
-- (NSDate *)dateWeekAgo;
-- (NSDate *)dateWeekAhead;
+- (NSDate *)dateBySettingDay:(NSInteger)day;
+- (NSDate *)dateByAddingDays:(NSInteger)days;
 
 @end
