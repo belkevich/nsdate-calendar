@@ -14,8 +14,6 @@ using namespace Cedar::Doubles;
 
 SPEC_BEGIN(NSDateDaySpec)
 
-NSTimeInterval const timeInterval = 1378236404.764846;
-
 describe(@"Date", ^
 {
     __block NSDate *date;
@@ -23,7 +21,7 @@ describe(@"Date", ^
 
     beforeEach(^
                {
-                   date = [[NSDate alloc] initWithTimeIntervalSince1970:timeInterval];
+                   date = [[NSDate alloc] initWithTimeIntervalSince1970:1378236404.764846];
                    formatter = [[NSDateFormatter alloc] init];
                });
 

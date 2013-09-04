@@ -12,6 +12,13 @@
 
 #pragma mark - public
 
+- (NSDateComponents *)dateComponentsDateTime
+{
+    NSUInteger components = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit |
+    NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit);
+    return [self dateComponents:components];
+}
+
 - (NSDateComponents *)dateComponentsTime
 {
     NSUInteger components = (NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit);
@@ -42,8 +49,7 @@
 
 - (NSDateComponents *)dateComponents:(NSUInteger)components
 {
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    return [calendar components:components fromDate:self];
+    return [[NSCalendar currentCalendar] components:components fromDate:self];
 }
 
 @end

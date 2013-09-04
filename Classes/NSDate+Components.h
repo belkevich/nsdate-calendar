@@ -10,6 +10,7 @@
 
 @interface NSDate (Components)
 
+- (NSDateComponents *)dateComponentsDateTime;
 - (NSDateComponents *)dateComponentsTime;
 - (NSDateComponents *)dateComponentsDate;
 - (NSDateComponents *)dateComponentsWeek;
