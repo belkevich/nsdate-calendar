@@ -13,8 +13,7 @@
 
 - (NSInteger)hour
 {
-    NSDateComponents *components = [self dateComponentsTime];
-    return components.hour;
+    return [self dateComponentsTime].hour;
 }
 
 - (NSInteger)minute

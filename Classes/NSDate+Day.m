@@ -13,8 +13,7 @@
 
 - (NSInteger)day
 {
-    NSDateComponents *components = [self dateComponentsDate];
-    return components.day;
+    return [self dateComponentsDate].day;
 }
 
 - (NSDate *)dateToday

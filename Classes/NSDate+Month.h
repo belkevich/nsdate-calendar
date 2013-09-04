@@ -23,5 +23,4 @@
 - (NSDate *)dateBySettingMonth:(NSInteger)month;
 - (NSDate *)dateByAddingMonth:(NSInteger)month;
 
-
 @end

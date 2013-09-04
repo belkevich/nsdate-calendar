@@ -21,6 +21,8 @@
 		FA3A3D1617ABD7DA00E34F28 /* NSDate+Week.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A3D1017ABD7DA00E34F28 /* NSDate+Week.m */; };
 		FACD4D0017D74E5100CCA94C /* NSDate+Month.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD4CFF17D74E5100CCA94C /* NSDate+Month.m */; };
 		FACD4D0217D759B000CCA94C /* NSDate+MonthSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FACD4D0117D759B000CCA94C /* NSDate+MonthSpec.mm */; };
+		FACD4D0517D774FF00CCA94C /* NSDate+Year.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD4D0417D774FF00CCA94C /* NSDate+Year.m */; };
+		FACD4D0717D7797200CCA94C /* NSDate+YearSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FACD4D0617D7797200CCA94C /* NSDate+YearSpec.mm */; };
 		FAD6D21217D5C9D6006B4B1E /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD6D21117D5C9D6006B4B1E /* NSDate+Time.m */; };
 		FAD6D21417D5CB2A006B4B1E /* NSDate+TimeSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAD6D21317D5CB2A006B4B1E /* NSDate+TimeSpec.mm */; };
 		FAD6D21617D66D46006B4B1E /* NSDate+DaySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAD6D21517D66D46006B4B1E /* NSDate+DaySpec.mm */; };
@@ -49,6 +51,9 @@
 		FACD4CFE17D74E5100CCA94C /* NSDate+Month.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Month.h"; sourceTree = "<group>"; };
 		FACD4CFF17D74E5100CCA94C /* NSDate+Month.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Month.m"; sourceTree = "<group>"; };
 		FACD4D0117D759B000CCA94C /* NSDate+MonthSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+MonthSpec.mm"; sourceTree = "<group>"; };
+		FACD4D0317D774FF00CCA94C /* NSDate+Year.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Year.h"; sourceTree = "<group>"; };
+		FACD4D0417D774FF00CCA94C /* NSDate+Year.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Year.m"; sourceTree = "<group>"; };
+		FACD4D0617D7797200CCA94C /* NSDate+YearSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+YearSpec.mm"; sourceTree = "<group>"; };
 		FAD6D21017D5C9D6006B4B1E /* NSDate+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Time.h"; sourceTree = "<group>"; };
 		FAD6D21117D5C9D6006B4B1E /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
 		FAD6D21317D5CB2A006B4B1E /* NSDate+TimeSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+TimeSpec.mm"; sourceTree = "<group>"; };
@@ -129,6 +134,7 @@
 				FAD6D21317D5CB2A006B4B1E /* NSDate+TimeSpec.mm */,
 				FAD6D21517D66D46006B4B1E /* NSDate+DaySpec.mm */,
 				FACD4D0117D759B000CCA94C /* NSDate+MonthSpec.mm */,
+				FACD4D0617D7797200CCA94C /* NSDate+YearSpec.mm */,
 			);
 			name = Spec;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			children = (
 				FA3A3D0717ABD7DA00E34F28 /* NSDate+Components.h */,
 				FA3A3D0817ABD7DA00E34F28 /* NSDate+Components.m */,
+				FACD4D0317D774FF00CCA94C /* NSDate+Year.h */,
+				FACD4D0417D774FF00CCA94C /* NSDate+Year.m */,
 				FACD4CFE17D74E5100CCA94C /* NSDate+Month.h */,
 				FACD4CFF17D74E5100CCA94C /* NSDate+Month.m */,
 				FA3A3D0B17ABD7DA00E34F28 /* NSDate+Day.h */,
@@ -260,6 +268,8 @@
 				FAD6D21617D66D46006B4B1E /* NSDate+DaySpec.mm in Sources */,
 				FACD4D0017D74E5100CCA94C /* NSDate+Month.m in Sources */,
 				FACD4D0217D759B000CCA94C /* NSDate+MonthSpec.mm in Sources */,
+				FACD4D0517D774FF00CCA94C /* NSDate+Year.m in Sources */,
+				FACD4D0717D7797200CCA94C /* NSDate+YearSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

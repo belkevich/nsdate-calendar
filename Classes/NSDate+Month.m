@@ -13,8 +13,7 @@
 
 - (NSInteger)month
 {
-    NSDateComponents *components = [self dateComponentsDate];
-    return components.month;
+    return [self dateComponentsDate].month;
 }
 
 - (NSDate *)dateMonthStart
