@@ -38,7 +38,7 @@
 
 - (NSDate *)dateBySettingDay:(NSInteger)day
 {
-    NSDateComponents *components = [self dateComponentsDate];
+    NSDateComponents *components = [self dateComponentsDateTime];
     components.day = day;
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }

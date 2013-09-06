@@ -7,123 +7,87 @@
 //
 
 #import "NSDate+Month.h"
-#import "NSDate+Day.h"
-#import "NSDate+Time.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
 SPEC_BEGIN(NSDateMonthSpec)
 
-describe(@"Date", ^
+describe(@"Date with month", ^
 {
     __block NSDate *date;
+    __block NSDateFormatter *formatter;
 
     beforeEach(^
                {
-                   date = [[NSDate alloc] initWithTimeIntervalSince1970:1378296652.792332];
+                   formatter = [[NSDateFormatter alloc] init];
+                   [formatter setDateFormat:@"dd-MM-y HH:mm:ss"];
+                   date = [formatter dateFromString:@"04-09-2013 12:10:52"];
                });
 
-    it(@"should create check date with time interval", ^
-    {
-        [date description] should equal(@"2013-09-04 12:10:52 +0000");
-    });
-
-    it(@"should get month", ^
+    it(@"should get local month", ^
     {
         date.month should equal(9);
     });
 
-    it(@"should get month start date without time", ^
+    it(@"should get local month start date without time", ^
     {
-        NSDate *dateMonthStart = [date dateMonthStart];
-        dateMonthStart.month should equal(date.month);
-        dateMonthStart.day should equal(1);
-        dateMonthStart.hour should equal(0);
-        dateMonthStart.minute should equal(0);
-        dateMonthStart.second should equal(0);
+        NSString *dateMonthStart = [formatter stringFromDate:[date dateMonthStart]];
+        dateMonthStart should equal(@"01-09-2013 00:00:00");
     });
 
-    it(@"should get month end date without time", ^
+    it(@"should get local month end date without time", ^
     {
-        NSDate *dateMonthEnd = [date dateMonthEnd];
-        dateMonthEnd.month should equal(date.month);
-        dateMonthEnd.day should equal(30);
-        dateMonthEnd.hour should equal(0);
-        dateMonthEnd.minute should equal(0);
-        dateMonthEnd.second should equal(0);
+        NSString *dateMonthEnd = [formatter stringFromDate:[date dateMonthEnd]];
+        dateMonthEnd should equal(@"30-09-2013 00:00:00");
     });
 
-    it(@"should get date with same day and time but month ago", ^
+    it(@"should get local date of the same day and time month ago", ^
     {
-        NSDate *dateMonthAgo = [date dateMonthAgo];
-        dateMonthAgo.month should equal(date.month - 1);
-        dateMonthAgo.day should equal(date.day);
-        dateMonthAgo.hour should equal(date.hour);
-        dateMonthAgo.minute should equal(date.minute);
-        dateMonthAgo.second should equal(date.second);
+        NSString *dateMonthAgo = [formatter stringFromDate:[date dateMonthAgo]];
+        dateMonthAgo should equal(@"04-08-2013 12:10:52");
     });
 
-    it(@"should get date with same day and time but month ahead", ^
+    it(@"should get local date of the same day and time month ahead", ^
     {
-        NSDate *dateMonthAhead = [date dateMonthAhead];
-        dateMonthAhead.month should equal(date.month + 1);
-        dateMonthAhead.day should equal(date.day);
-        dateMonthAhead.hour should equal(date.hour);
-        dateMonthAhead.minute should equal(date.minute);
-        dateMonthAhead.second should equal(date.second);
+        NSString *dateMonthAhead = [formatter stringFromDate:[date dateMonthAhead]];
+        dateMonthAhead should equal(@"04-10-2013 12:10:52");
     });
 
-    it(@"should get date of previous month start without time", ^
+    it(@"should get local date of previous month start without time", ^
     {
-        NSDate *dateMonthAgoStart = [date dateMonthAgoStart];
-        dateMonthAgoStart.month should equal(date.month - 1);
-        dateMonthAgoStart.day should equal(1);
-        dateMonthAgoStart.hour should equal(0);
-        dateMonthAgoStart.minute should equal(0);
-        dateMonthAgoStart.second should equal(0);
+        NSString *dateMonthAgoStart = [formatter stringFromDate:[date dateMonthAgoStart]];
+        dateMonthAgoStart should equal(@"01-08-2013 00:00:00");
     });
 
-    it(@"should get date of previous month end without time", ^
+    it(@"should get local date of previous month end without time", ^
     {
-        NSDate *dateMonthAgoEnd = [date dateMonthAgoEnd];
-        dateMonthAgoEnd.month should equal(date.month - 1);
-        dateMonthAgoEnd.day should equal(31);
-        dateMonthAgoEnd.hour should equal(0);
-        dateMonthAgoEnd.minute should equal(0);
-        dateMonthAgoEnd.second should equal(0);
+        NSString *dateMonthAgoEnd = [formatter stringFromDate:[date dateMonthAgoEnd]];
+        dateMonthAgoEnd should equal(@"31-08-2013 00:00:00");
     });
 
-    it(@"should get date of next month start without time", ^
+    it(@"should get local date of next month start without time", ^
     {
-        NSDate *dateMonthAheadStart = [date dateMonthAheadStart];
-        dateMonthAheadStart.month should equal(date.month + 1);
-        dateMonthAheadStart.day should equal(1);
-        dateMonthAheadStart.hour should equal(0);
-        dateMonthAheadStart.minute should equal(0);
-        dateMonthAheadStart.second should equal(0);
+        NSString *dateMonthAheadStart = [formatter stringFromDate:[date dateMonthAheadStart]];
+        dateMonthAheadStart should equal(@"01-10-2013 00:00:00");
     });
 
-    it(@"should get date of next month end without time", ^
+    it(@"should get local date of next month end without time", ^
     {
-        NSDate *dateMonthAheadEnd = [date dateMonthAheadEnd];
-        dateMonthAheadEnd.month should equal(date.month + 1);
-        dateMonthAheadEnd.day should equal(31);
-        dateMonthAheadEnd.hour should equal(0);
-        dateMonthAheadEnd.minute should equal(0);
-        dateMonthAheadEnd.second should equal(0);
+        NSString *dateMonthAheadEnd = [formatter stringFromDate:[date dateMonthAheadEnd]];
+        dateMonthAheadEnd should equal(@"31-10-2013 00:00:00");
     });
 
-    it(@"should get date with changed month", ^
+    it(@"should get local date with changed month", ^
     {
-        NSDate *dateChanged = [date dateBySettingMonth:7];
-        [dateChanged description] should equal(@"2013-07-04 12:10:52 +0000");
+        NSString *dateChanged = [formatter stringFromDate:[date dateBySettingMonth:7]];
+        dateChanged should equal(@"04-07-2013 12:10:52");
     });
 
-    it(@"should get get with added month", ^
+    it(@"should get local date with added month", ^
     {
-        NSDate *dateChanged = [date dateByAddingMonth:1];
-        [dateChanged description] should equal(@"2013-10-04 12:10:52 +0000");
+        NSString *dateChanged = [formatter stringFromDate:[date dateByAddingMonth:4]];
+        dateChanged should equal(@"04-01-2014 12:10:52") ;
     });
 });
 
