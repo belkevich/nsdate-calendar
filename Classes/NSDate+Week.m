@@ -7,72 +7,88 @@
 //
 
 #import "NSDate+Week.h"
-#import "NSDate+Day.h"
 #import "NSDate+Components.h"
 
 @implementation NSDate (Week)
 
-#pragma mark - public
+- (NSInteger)weekOfMonth
+{
+    return [self dateComponentsWeek].weekOfMonth;
+}
+
+- (NSInteger)weekOfYear
+{
+    return [self dateComponentsWeek].weekOfYear;
+}
+
+- (NSInteger)weekday
+{
+    return [self dateComponentsWeekday].weekday;
+}
 
 - (NSDate *)dateWeekStart
 {
-#warning change to dateWithAddWeek:1
-    return [self dateWithDayOfWeek:1];
+    NSDateComponents *components = [self dateComponentsWeekday];
+    components.day -= components.weekday - 1;
+    return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
 - (NSDate *)dateWeekEnd
 {
-    return [self dateWithDayOfWeek:7];
+    NSDateComponents *components = [self dateComponentsWeekday];
+    components.day += 7 - components.weekday;
+    return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
 - (NSDate *)dateWeekAgo
 {
-    return [self dateByAddingDays:-7];
+    return nil;
 }
 
 - (NSDate *)dateWeekAhead
 {
-    return [self dateByAddingDays:7];
+    return nil;
 }
 
 - (NSDate *)dateWeekAgoStart
 {
-    NSDate *date = [self dateWithAddWeek:-1];
-    return [date dateWeekStart];
+    return nil;
 }
 
 - (NSDate *)dateWeekAgoEnd
 {
-    NSDate *date = [self dateWithAddWeek:-1];
-    return [date dateWeekEnd];
+    return nil;
 }
 
 - (NSDate *)dateWeekAheadStart
 {
-    NSDate *date = [self dateWithAddWeek:1];
-    return [date dateWeekStart];
+    return nil;
 }
 
 - (NSDate *)dateWeekAheadEnd
 {
-    NSDate *date = [self dateWithAddWeek:1];
-    return [date dateWeekEnd];
+    return nil;
 }
 
-#pragma mark - private
-
-- (NSDate *)dateWithDayOfWeek:(NSInteger)weekDay
+- (NSDate *)dateBySettingWeekOfYear:(NSInteger)week
 {
-    NSDateComponents *components = [self dateComponentsWeekday];
-    components.day += weekDay - components.weekday;
+    NSDateComponents *components = [self dateComponentsWeekTime];
+    components.weekOfYear = week;
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
-- (NSDate *)dateWithAddWeek:(NSInteger)week
+- (NSDate *)dateBySettingWeekday:(NSInteger)weekday
 {
-    NSDateComponents *components = [self dateComponentsWeek];
-    components.week += week;
+    NSDateComponents *components = [self dateComponentsWeekTime];
+    components.weekday = weekday;
     return [[NSCalendar currentCalendar] dateFromComponents:components];
+}
+
+- (NSDate *)dateByAddingWeek:(NSInteger)week
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.week = week;
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
 }
 
 @end

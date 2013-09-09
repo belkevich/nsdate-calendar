@@ -7,9 +7,6 @@
 //
 
 #import "NSDate+Year.h"
-#import "NSDate+Day.h"
-#import "NSDate+Time.h"
-#import "NSDate+Month.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;

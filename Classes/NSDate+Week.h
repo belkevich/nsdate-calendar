@@ -10,6 +10,10 @@
 
 @interface NSDate (Week)
 
+@property (nonatomic, readonly) NSInteger weekOfMonth;
+@property (nonatomic, readonly) NSInteger weekOfYear;
+@property (nonatomic, readonly) NSInteger weekday;
+
 - (NSDate *)dateWeekStart;
 - (NSDate *)dateWeekEnd;
 - (NSDate *)dateWeekAgo;
@@ -18,5 +22,8 @@
 - (NSDate *)dateWeekAgoEnd;
 - (NSDate *)dateWeekAheadStart;
 - (NSDate *)dateWeekAheadEnd;
+- (NSDate *)dateBySettingWeekOfYear:(NSInteger)week;
+- (NSDate *)dateBySettingWeekday:(NSInteger)weekday;
+- (NSDate *)dateByAddingWeek:(NSInteger)week;
 
 @end

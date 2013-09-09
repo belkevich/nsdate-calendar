@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A09191BD02CD4484B1A43EC8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3365E293CA4546FE8F17E32E /* libPods.a */; };
+		FA1C5E2317D8B81800B04FEB /* NSDate+WeekSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA1C5E2217D8B81800B04FEB /* NSDate+WeekSpec.mm */; };
 		FA3A3CE717ABD59C00E34F28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CE617ABD59C00E34F28 /* UIKit.framework */; };
 		FA3A3CE917ABD59C00E34F28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CE817ABD59C00E34F28 /* Foundation.framework */; };
 		FA3A3CEB17ABD59C00E34F28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CEA17ABD59C00E34F28 /* CoreGraphics.framework */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		3365E293CA4546FE8F17E32E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB806A60F67E4DC691C293D0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		FA1C5E2217D8B81800B04FEB /* NSDate+WeekSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+WeekSpec.mm"; sourceTree = "<group>"; };
 		FA3A3CE317ABD59C00E34F28 /* NSDateCategoriesSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDateCategoriesSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A3CE617ABD59C00E34F28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA3A3CE817ABD59C00E34F28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +137,7 @@
 				FAD6D21517D66D46006B4B1E /* NSDate+DaySpec.mm */,
 				FACD4D0117D759B000CCA94C /* NSDate+MonthSpec.mm */,
 				FACD4D0617D7797200CCA94C /* NSDate+YearSpec.mm */,
+				FA1C5E2217D8B81800B04FEB /* NSDate+WeekSpec.mm */,
 			);
 			name = Spec;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				FACD4D0217D759B000CCA94C /* NSDate+MonthSpec.mm in Sources */,
 				FACD4D0517D774FF00CCA94C /* NSDate+Year.m in Sources */,
 				FACD4D0717D7797200CCA94C /* NSDate+YearSpec.mm in Sources */,
+				FA1C5E2317D8B81800B04FEB /* NSDate+WeekSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
