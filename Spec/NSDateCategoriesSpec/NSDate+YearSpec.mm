@@ -56,25 +56,29 @@ describe(@"Date with year", ^
 
     it(@"should get local date of the previous year start without time", ^
     {
-        NSString *dateYearAgoStart = [formatter stringFromDate:[date dateYearAgoStart]];
+        date = [[date dateYearAgo] dateYearStart];
+        NSString *dateYearAgoStart = [formatter stringFromDate:date];
         dateYearAgoStart should equal(@"01-01-2012 00:00:00");
     });
 
     it(@"should get local date of the previous year end without time", ^
     {
-        NSString *dateYearAgoEnd = [formatter stringFromDate:[date dateYearAgoEnd]];
+        date = [[date dateYearAgo] dateYearEnd];
+        NSString *dateYearAgoEnd = [formatter stringFromDate:date];
         dateYearAgoEnd should equal(@"31-12-2012 00:00:00");
     });
 
     it(@"should get local date of the next year start without time", ^
     {
-        NSString *dateYearAheadStart = [formatter stringFromDate:[date dateYearAheadStart]];
+        date = [[date dateYearAhead] dateYearStart];
+        NSString *dateYearAheadStart = [formatter stringFromDate:date];
         dateYearAheadStart should equal(@"01-01-2014 00:00:00");
     });
 
     it(@"should get local date of the next year end without time", ^
     {
-        NSString *dateYearAheadEnd = [formatter stringFromDate:[date dateYearAheadEnd]];
+        date = [[date dateYearAhead] dateYearEnd];
+        NSString *dateYearAheadEnd = [formatter stringFromDate:date];
         dateYearAheadEnd should equal(@"31-12-2014 00:00:00");
     });
 

@@ -16,10 +16,6 @@
 - (NSDate *)dateMonthEnd;
 - (NSDate *)dateMonthAgo;
 - (NSDate *)dateMonthAhead;
-- (NSDate *)dateMonthAgoStart;
-- (NSDate *)dateMonthAgoEnd;
-- (NSDate *)dateMonthAheadStart;
-- (NSDate *)dateMonthAheadEnd;
 - (NSDate *)dateBySettingMonth:(NSInteger)month;
 - (NSDate *)dateByAddingMonth:(NSInteger)month;
 

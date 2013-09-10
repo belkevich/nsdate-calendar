@@ -52,6 +52,18 @@ describe(@"Date with week", ^
         dateWeekEnd should equal(@"03-08-2013 00:00:00");
     });
 
+    it(@"should get local date week ago", ^
+    {
+        NSString *dateWeekAgo = [formatter stringFromDate:[date dateWeekAgo]];
+        dateWeekAgo should equal(@"25-07-2013 13:04:35");
+    });
+
+    it(@"should get local date week ahead", ^
+    {
+        NSString *dateWeekAhead = [formatter stringFromDate:[date dateWeekAhead]];
+        dateWeekAhead should equal(@"08-08-2013 13:04:35");
+    });
+
     it(@"should get local date with changed weekday", ^
     {
         NSString *dateChanged = [formatter stringFromDate:[date dateBySettingWeekday:1]];
@@ -62,6 +74,12 @@ describe(@"Date with week", ^
     {
         NSString *dateChanged = [formatter stringFromDate:[date dateBySettingWeekOfYear:2]];
         dateChanged should equal(@"10-01-2013 13:04:35");
+    });
+
+    it(@"should get local date with changed week of month", ^
+    {
+        NSString *dateChanged = [formatter stringFromDate:[date dateBySettingWeekOfMonth:3]];
+        dateChanged should equal(@"15-08-2013 13:04:35");
     });
 
     it(@"should get local date with added week", ^

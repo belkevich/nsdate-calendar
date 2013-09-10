@@ -18,11 +18,8 @@
 - (NSDate *)dateWeekEnd;
 - (NSDate *)dateWeekAgo;
 - (NSDate *)dateWeekAhead;
-- (NSDate *)dateWeekAgoStart;
-- (NSDate *)dateWeekAgoEnd;
-- (NSDate *)dateWeekAheadStart;
-- (NSDate *)dateWeekAheadEnd;
 - (NSDate *)dateBySettingWeekOfYear:(NSInteger)week;
+- (NSDate *)dateBySettingWeekOfMonth:(NSInteger)week;
 - (NSDate *)dateBySettingWeekday:(NSInteger)weekday;
 - (NSDate *)dateByAddingWeek:(NSInteger)week;
 

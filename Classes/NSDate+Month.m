@@ -25,11 +25,10 @@
 
 - (NSDate *)dateMonthEnd
 {
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    components.day = -1;
-    return [[NSCalendar currentCalendar] dateByAddingComponents:components
-                                                         toDate:[self dateMonthAheadStart]
-                                                        options:0];
+    NSDateComponents *components = [self dateComponentsDate];
+    components.month++;
+    components.day = 0;
+    return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
 - (NSDate *)dateMonthAgo
@@ -40,34 +39,6 @@
 - (NSDate *)dateMonthAhead
 {
     return [self dateByAddingMonth:1];
-}
-
-- (NSDate *)dateMonthAgoStart
-{
-    NSDateComponents *components = [self dateComponentsDate];
-    components.day = 1;
-    components.month--;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
-}
-
-- (NSDate *)dateMonthAgoEnd
-{
-    NSDateComponents *components = [[self dateMonthStart] dateComponentsDate];
-    components.day--;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
-}
-
-- (NSDate *)dateMonthAheadStart
-{
-    NSDateComponents *components = [self dateComponentsDate];
-    components.day = 1;
-    components.month++;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
-}
-
-- (NSDate *)dateMonthAheadEnd
-{
-    return [[self dateMonthAhead] dateMonthEnd];
 }
 
 - (NSDate *)dateBySettingMonth:(NSInteger)month
@@ -83,6 +54,5 @@
     components.month = month;
     return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
 }
-
 
 @end

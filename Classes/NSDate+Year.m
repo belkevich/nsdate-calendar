@@ -44,43 +44,6 @@
     return [self dateByAddingYear:1];
 }
 
-- (NSDate *)dateYearAgoStart
-{
-    NSDateComponents *components = [self dateComponentsDate];
-    components.day = 1;
-    components.month = 1;
-    components.year--;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
-}
-
-- (NSDate *)dateYearAgoEnd
-{
-    NSDateComponents *components = [self dateComponentsDate];
-    components.day = 1;
-    components.month = 1;
-    components.day--;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
-}
-
-- (NSDate *)dateYearAheadStart
-{
-    NSDateComponents *components = [self dateComponentsDate];
-    components.day = 1;
-    components.month = 1;
-    components.year++;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
-}
-
-- (NSDate *)dateYearAheadEnd
-{
-    NSDateComponents *components = [self dateComponentsDate];
-    components.day = 1;
-    components.month = 1;
-    components.year += 2;
-    components.day--;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
-}
-
 - (NSDate *)dateBySettingYear:(NSInteger)year
 {
     NSDateComponents *components = [self dateComponentsDateTime];

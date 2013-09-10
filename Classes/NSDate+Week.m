@@ -42,38 +42,25 @@
 
 - (NSDate *)dateWeekAgo
 {
-    return nil;
+    return [self dateByAddingWeek:-1];
 }
 
 - (NSDate *)dateWeekAhead
 {
-    return nil;
-}
-
-- (NSDate *)dateWeekAgoStart
-{
-    return nil;
-}
-
-- (NSDate *)dateWeekAgoEnd
-{
-    return nil;
-}
-
-- (NSDate *)dateWeekAheadStart
-{
-    return nil;
-}
-
-- (NSDate *)dateWeekAheadEnd
-{
-    return nil;
+    return [self dateByAddingWeek:1];
 }
 
 - (NSDate *)dateBySettingWeekOfYear:(NSInteger)week
 {
     NSDateComponents *components = [self dateComponentsWeekTime];
     components.weekOfYear = week;
+    return [[NSCalendar currentCalendar] dateFromComponents:components];
+}
+
+- (NSDate *)dateBySettingWeekOfMonth:(NSInteger)week
+{
+    NSDateComponents *components = [self dateComponentsWeekTime];
+    components.weekOfYear += week - components.weekOfMonth;
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 

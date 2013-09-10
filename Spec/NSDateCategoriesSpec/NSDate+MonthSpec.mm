@@ -56,25 +56,29 @@ describe(@"Date with month", ^
 
     it(@"should get local date of previous month start without time", ^
     {
-        NSString *dateMonthAgoStart = [formatter stringFromDate:[date dateMonthAgoStart]];
+        date = [[date dateMonthAgo] dateMonthStart];
+        NSString *dateMonthAgoStart = [formatter stringFromDate:date];
         dateMonthAgoStart should equal(@"01-08-2013 00:00:00");
     });
 
     it(@"should get local date of previous month end without time", ^
     {
-        NSString *dateMonthAgoEnd = [formatter stringFromDate:[date dateMonthAgoEnd]];
+        date = [[date dateMonthAgo] dateMonthEnd];
+        NSString *dateMonthAgoEnd = [formatter stringFromDate:date];
         dateMonthAgoEnd should equal(@"31-08-2013 00:00:00");
     });
 
     it(@"should get local date of next month start without time", ^
     {
-        NSString *dateMonthAheadStart = [formatter stringFromDate:[date dateMonthAheadStart]];
+        date = [[date dateMonthAhead] dateMonthStart];
+        NSString *dateMonthAheadStart = [formatter stringFromDate:date];
         dateMonthAheadStart should equal(@"01-10-2013 00:00:00");
     });
 
     it(@"should get local date of next month end without time", ^
     {
-        NSString *dateMonthAheadEnd = [formatter stringFromDate:[date dateMonthAheadEnd]];
+        date = [[date dateMonthAhead] dateMonthEnd];
+        NSString *dateMonthAheadEnd = [formatter stringFromDate:date];
         dateMonthAheadEnd should equal(@"31-10-2013 00:00:00");
     });
 

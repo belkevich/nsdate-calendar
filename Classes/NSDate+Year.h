@@ -16,10 +16,6 @@
 - (NSDate *)dateYearEnd;
 - (NSDate *)dateYearAgo;
 - (NSDate *)dateYearAhead;
-- (NSDate *)dateYearAgoStart;
-- (NSDate *)dateYearAgoEnd;
-- (NSDate *)dateYearAheadStart;
-- (NSDate *)dateYearAheadEnd;
 - (NSDate *)dateBySettingYear:(NSInteger)year;
 - (NSDate *)dateByAddingYear:(NSInteger)year;
 
