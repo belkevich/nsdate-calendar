@@ -42,6 +42,7 @@
 		FA185AC417DF6A5100594F41 /* NSDate+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Compare.h"; sourceTree = "<group>"; };
 		FA185AC517DF6A5100594F41 /* NSDate+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Compare.m"; sourceTree = "<group>"; };
 		FA185AC717DF6AB300594F41 /* NSDate+CompareSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+CompareSpec.mm"; sourceTree = "<group>"; };
+		FA185AC917E0A2C500594F41 /* NSDate+Calendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Calendar.h"; sourceTree = "<group>"; };
 		FA1C5E2217D8B81800B04FEB /* NSDate+WeekSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+WeekSpec.mm"; sourceTree = "<group>"; };
 		FA3A3CE317ABD59C00E34F28 /* NSDateCategoriesSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDateCategoriesSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A3CE617ABD59C00E34F28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -157,6 +158,7 @@
 		FA3A3D0417ABD7DA00E34F28 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA185AC917E0A2C500594F41 /* NSDate+Calendar.h */,
 				FA185AC417DF6A5100594F41 /* NSDate+Compare.h */,
 				FA185AC517DF6A5100594F41 /* NSDate+Compare.m */,
 				FACD4D0317D774FF00CCA94C /* NSDate+Year.h */,
