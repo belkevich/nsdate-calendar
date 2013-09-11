@@ -10,6 +10,8 @@
 		A09191BD02CD4484B1A43EC8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3365E293CA4546FE8F17E32E /* libPods.a */; };
 		FA185AC117DF63BB00594F41 /* NSDate+DateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185AC017DF63BB00594F41 /* NSDate+DateTime.m */; };
 		FA185AC317DF677500594F41 /* NSDate+DateTimeSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA185AC217DF677500594F41 /* NSDate+DateTimeSpec.mm */; };
+		FA185AC617DF6A5100594F41 /* NSDate+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185AC517DF6A5100594F41 /* NSDate+Compare.m */; };
+		FA185AC817E0651B00594F41 /* NSDate+CompareSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA185AC717DF6AB300594F41 /* NSDate+CompareSpec.mm */; };
 		FA1C5E2317D8B81800B04FEB /* NSDate+WeekSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA1C5E2217D8B81800B04FEB /* NSDate+WeekSpec.mm */; };
 		FA3A3CE717ABD59C00E34F28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CE617ABD59C00E34F28 /* UIKit.framework */; };
 		FA3A3CE917ABD59C00E34F28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CE817ABD59C00E34F28 /* Foundation.framework */; };
@@ -37,6 +39,9 @@
 		FA185ABF17DF63BB00594F41 /* NSDate+DateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTime.h"; sourceTree = "<group>"; };
 		FA185AC017DF63BB00594F41 /* NSDate+DateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTime.m"; sourceTree = "<group>"; };
 		FA185AC217DF677500594F41 /* NSDate+DateTimeSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+DateTimeSpec.mm"; sourceTree = "<group>"; };
+		FA185AC417DF6A5100594F41 /* NSDate+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Compare.h"; sourceTree = "<group>"; };
+		FA185AC517DF6A5100594F41 /* NSDate+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Compare.m"; sourceTree = "<group>"; };
+		FA185AC717DF6AB300594F41 /* NSDate+CompareSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+CompareSpec.mm"; sourceTree = "<group>"; };
 		FA1C5E2217D8B81800B04FEB /* NSDate+WeekSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+WeekSpec.mm"; sourceTree = "<group>"; };
 		FA3A3CE317ABD59C00E34F28 /* NSDateCategoriesSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDateCategoriesSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A3CE617ABD59C00E34F28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -138,6 +143,7 @@
 		FA3A3D0317ABD7B200E34F28 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
+				FA185AC717DF6AB300594F41 /* NSDate+CompareSpec.mm */,
 				FACD4D0617D7797200CCA94C /* NSDate+YearSpec.mm */,
 				FACD4D0117D759B000CCA94C /* NSDate+MonthSpec.mm */,
 				FAD6D21517D66D46006B4B1E /* NSDate+DaySpec.mm */,
@@ -151,6 +157,8 @@
 		FA3A3D0417ABD7DA00E34F28 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA185AC417DF6A5100594F41 /* NSDate+Compare.h */,
+				FA185AC517DF6A5100594F41 /* NSDate+Compare.m */,
 				FACD4D0317D774FF00CCA94C /* NSDate+Year.h */,
 				FACD4D0417D774FF00CCA94C /* NSDate+Year.m */,
 				FACD4CFE17D74E5100CCA94C /* NSDate+Month.h */,
@@ -284,6 +292,8 @@
 				FA1C5E2317D8B81800B04FEB /* NSDate+WeekSpec.mm in Sources */,
 				FA185AC117DF63BB00594F41 /* NSDate+DateTime.m in Sources */,
 				FA185AC317DF677500594F41 /* NSDate+DateTimeSpec.mm in Sources */,
+				FA185AC617DF6A5100594F41 /* NSDate+Compare.m in Sources */,
+				FA185AC817E0651B00594F41 /* NSDate+CompareSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
