@@ -92,7 +92,19 @@ NSDate *dateAddedDay = [date dateByAddingDay:5];
 
 ###### Date with changed week
 
+> ### Remember, first day of the week is SUNDAY
+
 ```objective-c
+NSDate *date = ...    // 01-08-2013 13:04:35 (Thursday)
+// 28-07-2013 13:04:35 (Sunday)
+NSDate *dateChangedWeekday = [date dateBySettingWeekday:1];
+// 15-08-2013 13:04:35 (Thursday)
+NSDate *dateChangedWeekOfMonth = [date dateBySettingWeekOfMonth:3];
+// 10-01-2013 13:04:35 (Thursday)
+NSDate *dateChangedWeekOfYear = [date dateBySettingWeekOfYear:2];
+
+// 08-08-2013 13:04:35 (Thursday)
+NSDate *dateAddWeek = [date dateByAddingWeek:1];
 ```
 
 ---
@@ -113,9 +125,18 @@ NSDate *dateTomorrow = [date dateTomorrow];
 
 ###### Week routine
 
+> ### Remember, first day of the week is SUNDAY
+
 ```objective-c
-NSDate *date = ...    // 20-09-2013 18:24:33
-// 
+NSDate *date = ...    // 01-08-2013 13:04:35 (Thursday)
+// 28-07-2013 00:00:00 (Sunday)
+NSDate *dateWeekStart = [date dateWeekStart];
+// 03-08-2013 00:00:00 (Saturday)
+NSDate *dateWeekEnd = [date dateWeekEnd];
+// 25-07-2013 13:04:35 (Thursday)
+NSDate *dateWeekAgo = [date dateWeekAgo];
+// 08-08-2013 13:04:35 (Thursday)
+NSDate *dateWeekAhead = [date dateWeekAhead];
 ```
 
 ---
