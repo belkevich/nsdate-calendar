@@ -66,9 +66,9 @@
 
 - (NSDate *)dateBySettingWeekday:(NSInteger)weekday
 {
-    NSDateComponents *components = [self dateComponentsWeekTime];
-    components.weekday = weekday;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.weekday = weekday - self.weekday;
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
 }
 
 - (NSDate *)dateByAddingWeek:(NSInteger)week
