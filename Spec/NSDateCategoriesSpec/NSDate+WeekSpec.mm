@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 okolodev. All rights reserved.
 //
 
+#import <OCFuntime/OCFuntime.h>
 #import "NSDate+Week.h"
 
 using namespace Cedar::Matchers;
@@ -17,13 +18,20 @@ describe(@"Date with week", ^
 {
     __block NSDate *date;
     __block NSDateFormatter *formatter;
+    __block OCFuntime *funtime;
 
     beforeEach(^
                {
                    formatter = [[NSDateFormatter alloc] init];
                    [formatter setDateFormat:@"dd-MM-y HH:mm:ss"];
                    date = [formatter dateFromString:@"01-08-2013 13:04:35"];
+                   funtime = [[OCFuntime alloc] init];
                });
+
+    afterEach(^
+              {
+                  [funtime revertAll];
+              });
 
     it(@"should get local week of month number", ^
     {
@@ -64,8 +72,30 @@ describe(@"Date with week", ^
         dateWeekAhead should equal(@"08-08-2013 13:04:35");
     });
 
-    it(@"should get local date with changed weekday", ^
+    it(@"should get local date with changed weekday if first weekday sunday ", ^
     {
+        [funtime changeClass:NSCalendar.class classMethod:@selector(currentCalendar)
+              implementation:^
+              {
+                  NSCalendar *calendar = [[NSCalendar alloc]
+                                                      initWithCalendarIdentifier:NSGregorianCalendar];
+                  calendar.firstWeekday = 1;
+                  return calendar;
+              }];
+        NSString *dateChanged = [formatter stringFromDate:[date dateBySettingWeekday:1]];
+        dateChanged should equal(@"28-07-2013 13:04:35");
+    });
+
+    it(@"should get local date with changed weekday if first weekday monday ", ^
+    {
+        [funtime changeClass:NSCalendar.class classMethod:@selector(currentCalendar)
+              implementation:^
+              {
+                  NSCalendar *calendar = [[NSCalendar alloc]
+                                                      initWithCalendarIdentifier:NSGregorianCalendar];
+                  calendar.firstWeekday = 2;
+                  return calendar;
+              }];
         NSString *dateChanged = [formatter stringFromDate:[date dateBySettingWeekday:1]];
         dateChanged should equal(@"28-07-2013 13:04:35");
     });
