@@ -30,28 +30,28 @@
 
 - (NSDate *)dateBySettingHour:(NSInteger)hour
 {
-    NSDateComponents *components = [self dateComponentsTime];
+    NSDateComponents *components = [self dateComponentsDateTime];
     components.hour = hour;
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
 - (NSDate *)dateBySettingMinute:(NSInteger)minute
 {
-    NSDateComponents *components = [self dateComponentsTime];
+    NSDateComponents *components = [self dateComponentsDateTime];
     components.minute = minute;
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
 - (NSDate *)dateBySettingSecond:(NSInteger)second
 {
-    NSDateComponents *components = [self dateComponentsTime];
+    NSDateComponents *components = [self dateComponentsDateTime];
     components.second = second;
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
 - (NSDate *)dateBySettingHour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second
 {
-    NSDateComponents *components = [self dateComponentsTime];
+    NSDateComponents *components = [self dateComponentsDateTime];
     components.hour = hour;
     components.minute = minute;
     components.second = second;
