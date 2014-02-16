@@ -1,17 +1,14 @@
 NSDate+Calendar
 ===
 
-#### About
-[![Build Status](https://travis-ci.org/belkevich/nsdate-calendar.png?branch=master)](https://travis-ci.org/belkevich/nsdate-calendar)
-
 This is the set of categories on [NSDate](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSDate_Class/Reference/Reference.html) that allow access to date components such as *year, month, week of year, week of month, weekday, day, hour, minute, second* in local time zone and many more.
+
+[![Build Status](https://travis-ci.org/belkevich/nsdate-calendar.png?branch=master)](https://travis-ci.org/belkevich/nsdate-calendar)
 
 ---
 
 #### Install
 Add to [Podfile](http://cocoapods.org/) `pod 'NSDate+Calendar'`
-
----
 
 #### Using
 
@@ -30,8 +27,6 @@ NSInteger minute = date.minute;             // 4
 NSInteger second = date.second;             // 35
 ```
 
----
-
 ###### Create date from date components
 
 ```objective-c
@@ -41,8 +36,6 @@ NSDate *dateWithDate = [NSDate dateWithYear:2013 month:9 day:21];
 NSDate *dateWithDateAndTime = [NSDate dateWithYear:2013 month:9 day:21
                                               hour:17 minute:51 second:23];
 ```
-
----
 
 ###### Date with changed time
 
@@ -67,8 +60,6 @@ NSDate *dateAddedSecond = [date dateByAddingSecond:112];
 NSDate *dateAddedTime = [date dateByAddingHour:1 minute:1 second:1];
 ```
 
----
-
 ###### Date with changed date
 
 ```objective-c
@@ -88,11 +79,9 @@ NSDate *dateAddedMonth = [date dateByAddingMonth:4];
 NSDate *dateAddedDay = [date dateByAddingDay:5];
 ```
 
----
-
 ###### Date with changed week
 
-> ### Remember, first day of the week is SUNDAY
+**Remember, first day of the week is SUNDAY**
 
 ```objective-c
 NSDate *date = ...    // 01-08-2013 13:04:35 (Thursday)
@@ -107,8 +96,6 @@ NSDate *dateChangedWeekOfYear = [date dateBySettingWeekOfYear:2];
 NSDate *dateAddWeek = [date dateByAddingWeek:1];
 ```
 
----
-
 ###### Day routine
 
 ```objective-c
@@ -121,11 +108,9 @@ NSDate *dateYesterday = [date dateYesterday];
 NSDate *dateTomorrow = [date dateTomorrow];
 ```
 
----
-
 ###### Week routine
 
-> ### Remember, first day of the week is SUNDAY
+**Remember, first day of the week is SUNDAY**
 
 ```objective-c
 NSDate *date = ...    // 01-08-2013 13:04:35 (Thursday)
@@ -138,8 +123,6 @@ NSDate *dateWeekAgo = [date dateWeekAgo];
 // 08-08-2013 13:04:35 (Thursday)
 NSDate *dateWeekAhead = [date dateWeekAhead];
 ```
-
----
 
 ###### Month routine
 
@@ -155,8 +138,6 @@ NSDate *dateMonthAgo = [date dateMonthAgo];
 NSDate *dateMonthAhead = [date dateMonthAhead];
 ```
 
----
-
 ###### Year routine
 
 ```objective-c
@@ -171,8 +152,6 @@ NSDate *dateYearAgo = [date dateYearAgo];
 NSDate *dateYearAhead = [date dateYearAhead];
 ```
 
----
-
 ###### Date compare
 
 ```objective-c
@@ -186,8 +165,17 @@ BOOL isLessOrEqual = [date1 isLessOrEqualToDate:date2];       // YES
 BOOL isGreaterOrEqual = [date1 isGreaterOrEqualToDate:date2]; // NO
 ```
 
----
+#### History 
+
+**Version 0.0.3**
+* Fixed time changing removes 'date' component. Thanks to [John Hobbs](https://github.com/jmhobbs)
+
+**Version 0.0.2**
+* Fixed set weekday bug on calender with 'monday' as first weekday.
+
+**Version 0.0.1**
+* First release
 
 #### Updates
 
-[@okolodev](https://twitter.com/okolodev)
+Follow updates on twitter [@okolodev](https://twitter.com/okolodev)
