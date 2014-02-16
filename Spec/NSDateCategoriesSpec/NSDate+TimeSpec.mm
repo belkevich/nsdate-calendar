@@ -7,6 +7,9 @@
 //
 
 #import "NSDate+Time.h"
+#import "NSDate+Day.h"
+#import "NSDate+Month.h"
+#import "NSDate+Year.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -21,9 +24,11 @@ describe(@"Date with time", ^
     beforeEach(^
                {
                    formatter = [[NSDateFormatter alloc] init];
-                   [formatter setDateFormat:@"HH:mm:ss"];
-                   date = [formatter dateFromString:@"10:20:30"];
+                   [formatter setTimeZone:[NSTimeZone localTimeZone]];
+                   [formatter setDateFormat:@"yyyy'-'MM'-'dd HH:mm:ss"];
+                   date = [formatter dateFromString:@"2014-01-02 10:20:30"];
                });
+
 
     it(@"should get local hour", ^
     {
@@ -46,6 +51,10 @@ describe(@"Date with time", ^
         date.hour should equal(22);
         date.minute should equal(20);
         date.second should equal(30);
+
+        date.year should equal(2014);
+        date.month should equal(1);
+        date.day should equal(2);
     });
 
     it(@"should get date with changed local minute", ^
@@ -54,6 +63,10 @@ describe(@"Date with time", ^
         date.hour should equal(10);
         date.minute should equal(11);
         date.second should equal(30);
+
+        date.year should equal(2014);
+        date.month should equal(1);
+        date.day should equal(2);
     });
 
     it(@"should get date with changed local second", ^
@@ -62,6 +75,10 @@ describe(@"Date with time", ^
         date.hour should equal(10);
         date.minute should equal(20);
         date.second should equal(33);
+
+        date.year should equal(2014);
+        date.month should equal(1);
+        date.day should equal(2);
     });
 
     it(@"should get date with changed local hour, minute, second", ^
@@ -70,6 +87,10 @@ describe(@"Date with time", ^
         date.hour should equal(22);
         date.minute should equal(11);
         date.second should equal(33);
+
+        date.year should equal(2014);
+        date.month should equal(1);
+        date.day should equal(2);
     });
 
     it(@"should get date with added hour", ^
@@ -78,6 +99,10 @@ describe(@"Date with time", ^
         date.hour should equal(11);
         date.minute should equal(20);
         date.second should equal(30);
+
+        date.year should equal(2014);
+        date.month should equal(1);
+        date.day should equal(2);
     });
 
     it(@"should get date with added minute", ^
@@ -86,6 +111,10 @@ describe(@"Date with time", ^
         date.hour should equal(10);
         date.minute should equal(21);
         date.second should equal(30);
+
+        date.year should equal(2014);
+        date.month should equal(1);
+        date.day should equal(2);
     });
 
     it(@"should get date with added second", ^
@@ -94,6 +123,10 @@ describe(@"Date with time", ^
         date.hour should equal(10);
         date.minute should equal(20);
         date.second should equal(35);
+
+        date.year should equal(2014);
+        date.month should equal(1);
+        date.day should equal(2);
     });
 
     it(@"should get date with added hour, minute, second", ^
@@ -102,6 +135,10 @@ describe(@"Date with time", ^
         date.hour should equal(11);
         date.minute should equal(22);
         date.second should equal(33);
+
+        date.year should equal(2014);
+        date.month should equal(1);
+        date.day should equal(2);
     });
 });
 
