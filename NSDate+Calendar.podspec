@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSDate+Calendar"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "NSDate categories to access date components and many more."
   s.homepage     = "https://github.com/belkevich/nsdate-calendar"
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
