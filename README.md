@@ -81,7 +81,7 @@ NSDate *dateAddedDay = [date dateByAddingDay:5];
 
 ###### Date with changed week
 
-**Remember, first day of the week is SUNDAY**
+**Sunday is a weekday number 1. Regardless your local calendar**
 
 ```objective-c
 NSDate *date = ...    // 01-08-2013 13:04:35 (Thursday)
@@ -110,7 +110,7 @@ NSDate *dateTomorrow = [date dateTomorrow];
 
 ###### Week routine
 
-**Remember, first day of the week is SUNDAY**
+**[First day of the week](https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/NSCalendar_Class/Reference/NSCalendar.html#//apple_ref/occ/instm/NSCalendar/firstWeekday) is value of your [local calendar](https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/NSCalendar_Class/Reference/NSCalendar.html#//apple_ref/occ/clm/NSCalendar/currentCalendar) and can't be changed**
 
 ```objective-c
 NSDate *date = ...    // 01-08-2013 13:04:35 (Thursday)
@@ -167,14 +167,17 @@ BOOL isGreaterOrEqual = [date1 isGreaterOrEqualToDate:date2]; // NO
 
 #### History 
 
+**Version 0.0.4**
+* Fixed potential bug in `dateWeekStart` and `dateWeekEnd` if local calendar's first weekday isn't sunday. Thanks to [artembartle](https://github.com/artembartle).
+
 **Version 0.0.3**
-* Fixed time changing removes 'date' component. Thanks to [John Hobbs](https://github.com/jmhobbs)
+* Fixed time changing removes 'date' component. Thanks to [John Hobbs](https://github.com/jmhobbs).
 
 **Version 0.0.2**
-* Fixed set weekday bug on calender with 'monday' as first weekday.
+* Fixed set weekday bug on calendar with 'monday' as first weekday.
 
 **Version 0.0.1**
-* First release
+* First release.
 
 #### Updates
 
