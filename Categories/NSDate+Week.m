@@ -29,7 +29,7 @@
 - (NSDate *)dateWeekStart
 {
     NSDateComponents *components = [self dateComponentsWeekday];
-    components.day -= components.weekday - 1;
+    components.day -= components.weekday - [[NSCalendar currentCalendar] firstWeekday];
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
