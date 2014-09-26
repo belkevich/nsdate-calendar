@@ -16,6 +16,14 @@
     return [self dateComponentsDate].day;
 }
 
+- (NSUInteger)daysInMonth
+{
+    NSRange range = [[NSCalendar currentCalendar]
+                                 rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit
+                                     forDate:self];
+    return range.length;
+}
+
 - (NSDate *)dateToday
 {
     NSDateComponents *components = [self dateComponentsDate];

@@ -11,6 +11,7 @@
 @interface NSDate (Day)
 
 @property (nonatomic, readonly) NSInteger day;
+@property (nonatomic, readonly) NSUInteger daysInMonth;
 
 - (NSDate *)dateToday;
 - (NSDate *)dateYesterday;
