@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 okolodev. All rights reserved.
 //
 
-#import <OCFuntime/OCFuntime.h>
+#import <OCFuntime/OCFuntime+Methods.h>
 #import "NSDate+Week.h"
 
 using namespace Cedar::Matchers;
@@ -30,7 +30,7 @@ describe(@"Date with week", ^
 
     afterEach(^
               {
-                  [funtime revertAll];
+                  [funtime revertAllMethods];
               });
 
     it(@"should get local week of month number", ^
