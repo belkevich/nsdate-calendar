@@ -1,7 +1,6 @@
 *.swp
 *~.nib
 *.orig
-*.lock
 *.xcworkspace
 build
 DerivedData
