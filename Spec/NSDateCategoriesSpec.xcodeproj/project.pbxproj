@@ -10,14 +10,6 @@
 		A09191BD02CD4484B1A43EC8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3365E293CA4546FE8F17E32E /* libPods.a */; };
 		FA185AC317DF677500594F41 /* NSDate+DateTimeSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA185AC217DF677500594F41 /* NSDate+DateTimeSpec.mm */; };
 		FA185AC817E0651B00594F41 /* NSDate+CompareSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA185AC717DF6AB300594F41 /* NSDate+CompareSpec.mm */; };
-		FA185B1017E0A51C00594F41 /* NSDate+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185B0117E0A51C00594F41 /* NSDate+Compare.m */; };
-		FA185B1117E0A51C00594F41 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185B0317E0A51C00594F41 /* NSDate+Components.m */; };
-		FA185B1217E0A51C00594F41 /* NSDate+DateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185B0517E0A51C00594F41 /* NSDate+DateTime.m */; };
-		FA185B1317E0A51C00594F41 /* NSDate+Day.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185B0717E0A51C00594F41 /* NSDate+Day.m */; };
-		FA185B1417E0A51C00594F41 /* NSDate+Month.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185B0917E0A51C00594F41 /* NSDate+Month.m */; };
-		FA185B1517E0A51C00594F41 /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185B0B17E0A51C00594F41 /* NSDate+Time.m */; };
-		FA185B1617E0A51C00594F41 /* NSDate+Week.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185B0D17E0A51C00594F41 /* NSDate+Week.m */; };
-		FA185B1717E0A51C00594F41 /* NSDate+Year.m in Sources */ = {isa = PBXBuildFile; fileRef = FA185B0F17E0A51C00594F41 /* NSDate+Year.m */; };
 		FA1C5E2317D8B81800B04FEB /* NSDate+WeekSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA1C5E2217D8B81800B04FEB /* NSDate+WeekSpec.mm */; };
 		FA3A3CE717ABD59C00E34F28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CE617ABD59C00E34F28 /* UIKit.framework */; };
 		FA3A3CE917ABD59C00E34F28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A3CE817ABD59C00E34F28 /* Foundation.framework */; };
@@ -27,6 +19,14 @@
 		FA3A3CF917ABD59D00E34F28 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3A3CF817ABD59D00E34F28 /* Default.png */; };
 		FA3A3CFB17ABD59D00E34F28 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3A3CFA17ABD59D00E34F28 /* Default@2x.png */; };
 		FA3A3CFD17ABD59D00E34F28 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3A3CFC17ABD59D00E34F28 /* Default-568h@2x.png */; };
+		FA9A341819D7AF4600BDB9AE /* NSDate+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A340919D7AF4600BDB9AE /* NSDate+Compare.m */; };
+		FA9A341919D7AF4600BDB9AE /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A340B19D7AF4600BDB9AE /* NSDate+Components.m */; };
+		FA9A341A19D7AF4600BDB9AE /* NSDate+DateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A340D19D7AF4600BDB9AE /* NSDate+DateTime.m */; };
+		FA9A341B19D7AF4600BDB9AE /* NSDate+Day.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A340F19D7AF4600BDB9AE /* NSDate+Day.m */; };
+		FA9A341C19D7AF4600BDB9AE /* NSDate+Month.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A341119D7AF4600BDB9AE /* NSDate+Month.m */; };
+		FA9A341D19D7AF4600BDB9AE /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A341319D7AF4600BDB9AE /* NSDate+Time.m */; };
+		FA9A341E19D7AF4600BDB9AE /* NSDate+Week.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A341519D7AF4600BDB9AE /* NSDate+Week.m */; };
+		FA9A341F19D7AF4600BDB9AE /* NSDate+Year.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A341719D7AF4600BDB9AE /* NSDate+Year.m */; };
 		FACD4D0217D759B000CCA94C /* NSDate+MonthSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FACD4D0117D759B000CCA94C /* NSDate+MonthSpec.mm */; };
 		FACD4D0717D7797200CCA94C /* NSDate+YearSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FACD4D0617D7797200CCA94C /* NSDate+YearSpec.mm */; };
 		FAD6D21417D5CB2A006B4B1E /* NSDate+TimeSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAD6D21317D5CB2A006B4B1E /* NSDate+TimeSpec.mm */; };
@@ -39,23 +39,6 @@
 		C4EF82059451CB50B0EDE27E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA185AC217DF677500594F41 /* NSDate+DateTimeSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+DateTimeSpec.mm"; sourceTree = "<group>"; };
 		FA185AC717DF6AB300594F41 /* NSDate+CompareSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+CompareSpec.mm"; sourceTree = "<group>"; };
-		FA185AFF17E0A51C00594F41 /* NSDate+Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Calendar.h"; sourceTree = "<group>"; };
-		FA185B0017E0A51C00594F41 /* NSDate+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Compare.h"; sourceTree = "<group>"; };
-		FA185B0117E0A51C00594F41 /* NSDate+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Compare.m"; sourceTree = "<group>"; };
-		FA185B0217E0A51C00594F41 /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
-		FA185B0317E0A51C00594F41 /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Components.m"; sourceTree = "<group>"; };
-		FA185B0417E0A51C00594F41 /* NSDate+DateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTime.h"; sourceTree = "<group>"; };
-		FA185B0517E0A51C00594F41 /* NSDate+DateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTime.m"; sourceTree = "<group>"; };
-		FA185B0617E0A51C00594F41 /* NSDate+Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Day.h"; sourceTree = "<group>"; };
-		FA185B0717E0A51C00594F41 /* NSDate+Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Day.m"; sourceTree = "<group>"; };
-		FA185B0817E0A51C00594F41 /* NSDate+Month.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Month.h"; sourceTree = "<group>"; };
-		FA185B0917E0A51C00594F41 /* NSDate+Month.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Month.m"; sourceTree = "<group>"; };
-		FA185B0A17E0A51C00594F41 /* NSDate+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Time.h"; sourceTree = "<group>"; };
-		FA185B0B17E0A51C00594F41 /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
-		FA185B0C17E0A51C00594F41 /* NSDate+Week.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Week.h"; sourceTree = "<group>"; };
-		FA185B0D17E0A51C00594F41 /* NSDate+Week.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Week.m"; sourceTree = "<group>"; };
-		FA185B0E17E0A51C00594F41 /* NSDate+Year.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Year.h"; sourceTree = "<group>"; };
-		FA185B0F17E0A51C00594F41 /* NSDate+Year.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Year.m"; sourceTree = "<group>"; };
 		FA1C5E2217D8B81800B04FEB /* NSDate+WeekSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+WeekSpec.mm"; sourceTree = "<group>"; };
 		FA3A3CE317ABD59C00E34F28 /* NSDateCategoriesSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDateCategoriesSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A3CE617ABD59C00E34F28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -68,6 +51,23 @@
 		FA3A3CF817ABD59D00E34F28 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FA3A3CFA17ABD59D00E34F28 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FA3A3CFC17ABD59D00E34F28 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA9A340719D7AF4600BDB9AE /* NSDate+Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Calendar.h"; sourceTree = "<group>"; };
+		FA9A340819D7AF4600BDB9AE /* NSDate+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Compare.h"; sourceTree = "<group>"; };
+		FA9A340919D7AF4600BDB9AE /* NSDate+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Compare.m"; sourceTree = "<group>"; };
+		FA9A340A19D7AF4600BDB9AE /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
+		FA9A340B19D7AF4600BDB9AE /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Components.m"; sourceTree = "<group>"; };
+		FA9A340C19D7AF4600BDB9AE /* NSDate+DateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTime.h"; sourceTree = "<group>"; };
+		FA9A340D19D7AF4600BDB9AE /* NSDate+DateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTime.m"; sourceTree = "<group>"; };
+		FA9A340E19D7AF4600BDB9AE /* NSDate+Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Day.h"; sourceTree = "<group>"; };
+		FA9A340F19D7AF4600BDB9AE /* NSDate+Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Day.m"; sourceTree = "<group>"; };
+		FA9A341019D7AF4600BDB9AE /* NSDate+Month.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Month.h"; sourceTree = "<group>"; };
+		FA9A341119D7AF4600BDB9AE /* NSDate+Month.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Month.m"; sourceTree = "<group>"; };
+		FA9A341219D7AF4600BDB9AE /* NSDate+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Time.h"; sourceTree = "<group>"; };
+		FA9A341319D7AF4600BDB9AE /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
+		FA9A341419D7AF4600BDB9AE /* NSDate+Week.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Week.h"; sourceTree = "<group>"; };
+		FA9A341519D7AF4600BDB9AE /* NSDate+Week.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Week.m"; sourceTree = "<group>"; };
+		FA9A341619D7AF4600BDB9AE /* NSDate+Year.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Year.h"; sourceTree = "<group>"; };
+		FA9A341719D7AF4600BDB9AE /* NSDate+Year.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Year.m"; sourceTree = "<group>"; };
 		FACD4D0117D759B000CCA94C /* NSDate+MonthSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+MonthSpec.mm"; sourceTree = "<group>"; };
 		FACD4D0617D7797200CCA94C /* NSDate+YearSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+YearSpec.mm"; sourceTree = "<group>"; };
 		FAD6D21317D5CB2A006B4B1E /* NSDate+TimeSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+TimeSpec.mm"; sourceTree = "<group>"; };
@@ -98,35 +98,10 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FA185AFE17E0A51C00594F41 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				FA185AFF17E0A51C00594F41 /* NSDate+Calendar.h */,
-				FA185B0017E0A51C00594F41 /* NSDate+Compare.h */,
-				FA185B0117E0A51C00594F41 /* NSDate+Compare.m */,
-				FA185B0217E0A51C00594F41 /* NSDate+Components.h */,
-				FA185B0317E0A51C00594F41 /* NSDate+Components.m */,
-				FA185B0417E0A51C00594F41 /* NSDate+DateTime.h */,
-				FA185B0517E0A51C00594F41 /* NSDate+DateTime.m */,
-				FA185B0617E0A51C00594F41 /* NSDate+Day.h */,
-				FA185B0717E0A51C00594F41 /* NSDate+Day.m */,
-				FA185B0817E0A51C00594F41 /* NSDate+Month.h */,
-				FA185B0917E0A51C00594F41 /* NSDate+Month.m */,
-				FA185B0A17E0A51C00594F41 /* NSDate+Time.h */,
-				FA185B0B17E0A51C00594F41 /* NSDate+Time.m */,
-				FA185B0C17E0A51C00594F41 /* NSDate+Week.h */,
-				FA185B0D17E0A51C00594F41 /* NSDate+Week.m */,
-				FA185B0E17E0A51C00594F41 /* NSDate+Year.h */,
-				FA185B0F17E0A51C00594F41 /* NSDate+Year.m */,
-			);
-			name = Categories;
-			path = ../Categories;
-			sourceTree = "<group>";
-		};
 		FA3A3CDA17ABD59C00E34F28 = {
 			isa = PBXGroup;
 			children = (
-				FA185AFE17E0A51C00594F41 /* Categories */,
+				FA9A340619D7AF4600BDB9AE /* Pod */,
 				FA3A3CEC17ABD59C00E34F28 /* NSDateCategoriesSpec */,
 				FA3A3CE517ABD59C00E34F28 /* Frameworks */,
 				FA3A3CE417ABD59C00E34F28 /* Products */,
@@ -190,6 +165,31 @@
 			name = Spec;
 			sourceTree = "<group>";
 		};
+		FA9A340619D7AF4600BDB9AE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A340719D7AF4600BDB9AE /* NSDate+Calendar.h */,
+				FA9A340819D7AF4600BDB9AE /* NSDate+Compare.h */,
+				FA9A340919D7AF4600BDB9AE /* NSDate+Compare.m */,
+				FA9A340A19D7AF4600BDB9AE /* NSDate+Components.h */,
+				FA9A340B19D7AF4600BDB9AE /* NSDate+Components.m */,
+				FA9A340C19D7AF4600BDB9AE /* NSDate+DateTime.h */,
+				FA9A340D19D7AF4600BDB9AE /* NSDate+DateTime.m */,
+				FA9A340E19D7AF4600BDB9AE /* NSDate+Day.h */,
+				FA9A340F19D7AF4600BDB9AE /* NSDate+Day.m */,
+				FA9A341019D7AF4600BDB9AE /* NSDate+Month.h */,
+				FA9A341119D7AF4600BDB9AE /* NSDate+Month.m */,
+				FA9A341219D7AF4600BDB9AE /* NSDate+Time.h */,
+				FA9A341319D7AF4600BDB9AE /* NSDate+Time.m */,
+				FA9A341419D7AF4600BDB9AE /* NSDate+Week.h */,
+				FA9A341519D7AF4600BDB9AE /* NSDate+Week.m */,
+				FA9A341619D7AF4600BDB9AE /* NSDate+Year.h */,
+				FA9A341719D7AF4600BDB9AE /* NSDate+Year.m */,
+			);
+			name = Pod;
+			path = ../Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,8 +231,6 @@
 			mainGroup = FA3A3CDA17ABD59C00E34F28;
 			productRefGroup = FA3A3CE417ABD59C00E34F28 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				FA3A3CE217ABD59C00E34F28 /* NSDateCategoriesSpec */,
@@ -293,21 +291,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3A3CF317ABD59C00E34F28 /* main.m in Sources */,
+				FA9A341A19D7AF4600BDB9AE /* NSDate+DateTime.m in Sources */,
 				FAD6D21417D5CB2A006B4B1E /* NSDate+TimeSpec.mm in Sources */,
+				FA9A341F19D7AF4600BDB9AE /* NSDate+Year.m in Sources */,
 				FAD6D21617D66D46006B4B1E /* NSDate+DaySpec.mm in Sources */,
 				FACD4D0217D759B000CCA94C /* NSDate+MonthSpec.mm in Sources */,
+				FA9A341919D7AF4600BDB9AE /* NSDate+Components.m in Sources */,
+				FA9A341C19D7AF4600BDB9AE /* NSDate+Month.m in Sources */,
+				FA9A341D19D7AF4600BDB9AE /* NSDate+Time.m in Sources */,
 				FACD4D0717D7797200CCA94C /* NSDate+YearSpec.mm in Sources */,
+				FA9A341B19D7AF4600BDB9AE /* NSDate+Day.m in Sources */,
 				FA1C5E2317D8B81800B04FEB /* NSDate+WeekSpec.mm in Sources */,
 				FA185AC317DF677500594F41 /* NSDate+DateTimeSpec.mm in Sources */,
+				FA9A341819D7AF4600BDB9AE /* NSDate+Compare.m in Sources */,
 				FA185AC817E0651B00594F41 /* NSDate+CompareSpec.mm in Sources */,
-				FA185B1017E0A51C00594F41 /* NSDate+Compare.m in Sources */,
-				FA185B1117E0A51C00594F41 /* NSDate+Components.m in Sources */,
-				FA185B1217E0A51C00594F41 /* NSDate+DateTime.m in Sources */,
-				FA185B1317E0A51C00594F41 /* NSDate+Day.m in Sources */,
-				FA185B1417E0A51C00594F41 /* NSDate+Month.m in Sources */,
-				FA185B1517E0A51C00594F41 /* NSDate+Time.m in Sources */,
-				FA185B1617E0A51C00594F41 /* NSDate+Week.m in Sources */,
-				FA185B1717E0A51C00594F41 /* NSDate+Year.m in Sources */,
+				FA9A341E19D7AF4600BDB9AE /* NSDate+Week.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
