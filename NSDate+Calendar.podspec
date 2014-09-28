@@ -3,6 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.4"
   s.summary      = "NSDate categories to access date components and many more."
   s.homepage     = "https://github.com/belkevich/nsdate-calendar"
+  s.social_media_url = 'https://twitter.com/okolodev'
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
   s.author       = { "Alexey Belkevich" => "belkevich.alexey@gmail.com" }
   s.source       = { :git => "https://github.com/belkevich/nsdate-calendar.git",
