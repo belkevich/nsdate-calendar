@@ -25,6 +25,7 @@ NSInteger weekday = date.weekday;           // 5
 NSInteger hour = date.hour;                 // 13
 NSInteger minute = date.minute;             // 4
 NSInteger second = date.second;             // 35
+NSUInteger daysInMonth = date.daysInMonth;  // 31
 ```
 
 ###### Create date from date components
@@ -165,7 +166,10 @@ BOOL isLessOrEqual = [date1 isLessOrEqualToDate:date2];       // YES
 BOOL isGreaterOrEqual = [date1 isGreaterOrEqualToDate:date2]; // NO
 ```
 
-#### History 
+#### History
+
+**Version 0.0.5**
+* Added 'days in month' property
 
 **Version 0.0.4**
 * Fixed potential bug in `dateWeekStart` and `dateWeekEnd` if local calendar's first weekday isn't sunday. Thanks to [artembartle](https://github.com/artembartle).
