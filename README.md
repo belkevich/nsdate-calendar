@@ -1,4 +1,4 @@
-NSDate+Calendar
+NSDate+Calendar 0.0.6
 ===
 
 This is the set of categories on [NSDate](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSDate_Class/Reference/Reference.html) that allow access to date components such as *year, month, week of year, week of month, weekday, day, hour, minute, second* in local time zone and many more.
@@ -168,20 +168,7 @@ BOOL isGreaterOrEqual = [date1 isGreaterOrEqualToDate:date2]; // NO
 
 #### History
 
-**Version 0.0.5**
-* Added 'days in month' property
-
-**Version 0.0.4**
-* Fixed potential bug in `dateWeekStart` and `dateWeekEnd` if local calendar's first weekday isn't sunday. Thanks to [artembartle](https://github.com/artembartle).
-
-**Version 0.0.3**
-* Fixed time changing removes 'date' component. Thanks to [John Hobbs](https://github.com/jmhobbs).
-
-**Version 0.0.2**
-* Fixed set weekday bug on calendar with 'monday' as first weekday.
-
-**Version 0.0.1**
-* First release.
+[Releases](https://github.com/belkevich/nsdate-calendar/releases)
 
 #### Updates
 
