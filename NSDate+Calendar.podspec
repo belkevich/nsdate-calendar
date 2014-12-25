@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSDate+Calendar"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "NSDate categories to access date components and many more."
   s.homepage     = "https://github.com/belkevich/nsdate-calendar"
   s.social_media_url = 'https://twitter.com/okolodev'
