@@ -1,10 +1,10 @@
 PODS:
-  - ABMultiton (2.0.5):
-    - ABMultiton/Core
-  - ABMultiton/Core (2.0.5)
-  - Cedar (0.9.8)
+  - ABMultiton (2.0.6):
+    - ABMultiton/Core (= 2.0.6)
+  - ABMultiton/Core (2.0.6)
+  - Cedar (0.11.1)
   - OCFuntime (0.2.0):
-    - OCFuntime/All
+    - OCFuntime/All (= 0.2.0)
   - OCFuntime/All (0.2.0):
     - OCFuntime/NSObject+OCFMethods
     - OCFuntime/NSObject+OCFProperties
@@ -28,8 +28,8 @@ DEPENDENCIES:
   - OCFuntime
 
 SPEC CHECKSUMS:
-  ABMultiton: 25c3aab81c12b1dcc42bed0691b72000cba2bd0a
-  Cedar: 6ad54fd39ef5f32292af175bc0259462c724ffb3
+  ABMultiton: 425f9b6c2b17307e74c6f5096a9ec2b4f87b764a
+  Cedar: 16fce41646511e08a488bac8f196f97f54184ed7
   OCFuntime: 3595ae5bd20a97fbef802e50436290fc93ec6013
 
-COCOAPODS: 0.34.0
+COCOAPODS: 0.35.0
