@@ -74,7 +74,7 @@
 - (NSDate *)dateByAddingWeek:(NSInteger)week
 {
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    components.week = week;
+    components.weekOfYear = week;
     return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
 }
 
