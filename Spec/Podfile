@@ -1,3 +1,6 @@
 platform :ios, '6.0'
-  pod 'Cedar'
-  pod 'OCFuntime'
+
+  target :NSDateCalendarSpec do
+    pod 'Cedar'
+    pod 'OCFuntime'
+  end
