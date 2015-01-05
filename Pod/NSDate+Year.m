@@ -16,6 +16,11 @@
     return [self dateComponentsDate].year;
 }
 
+- (NSInteger)yearOfWeekOfYear
+{
+    return [self dateComponentsWeek].yearOfWeekOfYear;
+}
+
 - (NSDate *)dateYearStart
 {
     NSDateComponents *components = [self dateComponentsDate];

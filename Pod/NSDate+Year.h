@@ -11,6 +11,7 @@
 @interface NSDate (Year)
 
 @property (nonatomic, readonly) NSInteger year;
+@property (nonatomic, readonly) NSInteger yearOfWeekOfYear;
 
 - (NSDate *)dateYearStart;
 - (NSDate *)dateYearEnd;
