@@ -19,7 +19,7 @@
 - (NSUInteger)daysInMonth
 {
     NSRange range = [[NSCalendar currentCalendar]
-                                 rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit
+                                 rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth
                                      forDate:self];
     return range.length;
 }
