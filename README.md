@@ -1,4 +1,4 @@
-NSDate+Calendar 0.0.6
+NSDate+Calendar 0.0.7
 ===
 
 This is the set of categories on [NSDate](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSDate_Class/Reference/Reference.html) that allow access to date components such as *year, month, week of year, week of month, weekday, day, hour, minute, second* in local time zone and many more.
