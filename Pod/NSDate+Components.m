@@ -48,10 +48,10 @@
 
 - (NSDateComponents *)dateComponentsWeekTime
 {
-    NSUInteger components = (NSCalendarUnitWeekOfMonth | NSCalendarUnitWeekday |
-                             NSCalendarUnitWeekdayOrdinal | NSCalendarUnitWeekOfYear |
-                             NSCalendarUnitYear | NSCalendarUnitYearForWeekOfYear |
-                             NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
+    NSUInteger components = (NSCalendarUnitWeekOfMonth | NSCalendarUnitWeekOfYear |
+                             NSCalendarUnitWeekday | NSCalendarUnitYear |
+                             NSCalendarUnitYearForWeekOfYear | NSCalendarUnitHour |
+                             NSCalendarUnitMinute | NSCalendarUnitSecond);
     return [self dateComponents:components];
 }
 
