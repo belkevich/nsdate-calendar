@@ -8,4 +8,4 @@ before_install:
 
 script:
         - xcodebuild build -workspace Spec.xcworkspace -scheme Spec -derivedDataPath build
-        - /build/Build/Products/Debug/Spec
+        - build/Build/Products/Debug/Spec
