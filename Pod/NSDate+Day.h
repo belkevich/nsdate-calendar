@@ -12,6 +12,7 @@
 
 @property (nonatomic, readonly) NSInteger day;
 @property (nonatomic, readonly) NSUInteger daysInMonth;
+@property (nonatomic, readonly) NSUInteger dayInYear;
 
 - (NSDate *)dateToday;
 - (NSDate *)dateYesterday;

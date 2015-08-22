@@ -24,6 +24,13 @@
     return range.length;
 }
 
+- (NSUInteger)dayInYear
+{
+    return [[NSCalendar currentCalendar] ordinalityOfUnit:NSCalendarUnitDay
+                                                   inUnit:NSCalendarUnitYear
+                                                  forDate:self];
+}
+
 - (NSDate *)dateToday
 {
     NSDateComponents *components = [self dateComponentsDate];
