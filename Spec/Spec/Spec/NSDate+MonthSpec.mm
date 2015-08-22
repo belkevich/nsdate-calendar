@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 okolodev. All rights reserved.
 //
 
+#import <Cedar/Cedar.h>
 #import "NSDate+Month.h"
 
 using namespace Cedar::Matchers;
