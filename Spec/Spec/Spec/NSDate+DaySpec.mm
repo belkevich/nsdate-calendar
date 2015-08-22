@@ -36,6 +36,12 @@ describe(@"Date with day", ^
         date.daysInMonth should equal(30);
     });
 
+    it(@"should get day in current year", ^
+    {
+        date = [formatter dateFromString:@"01-01-2015 12:12:12"];
+        date.dayInYear should equal(1);
+    });
+
     it(@"should get today local date without time", ^
     {
         NSString *today = [formatter stringFromDate:[date dateToday]];
