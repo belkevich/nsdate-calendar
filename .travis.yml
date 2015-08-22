@@ -6,4 +6,6 @@ before_install:
         - cd Spec
         - pod install
 
-script: xcodebuild test -workspace NSDateCalendar.xcworkspace -scheme NSDateCalendar -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
+script:
+        - xcodebuild build -workspace Spec.xcworkspace -scheme Spec -derivedDataPath build
+        - /build/Build/Products/Debug/Spec
