@@ -25,6 +25,7 @@
 		2DBA1E35BE3A586792EF36AA /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA123E03D2A1C78BBE8153 /* NSDate+Components.m */; };
 		2DBA1F5558C62448A5ABEC1F /* NSDate+CompareSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1761C8A4FDE14104E1DA /* NSDate+CompareSpec.mm */; };
 		DE7F58AE300A34718D6F131D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C16E712F1DCA3C3825477DF /* libPods.a */; };
+		FAE8B2B01B888452006FC74B /* NSDate+HourSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA16E9A7A5A0C0FA04AD2F /* NSDate+HourSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,7 @@
 		2DBA15F3232962A90CEDE304 /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
 		2DBA15FC524281248FE360CF /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
 		2DBA1623E13AD385244B6FD0 /* NSDate+Hour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Hour.h"; sourceTree = "<group>"; };
+		2DBA16E9A7A5A0C0FA04AD2F /* NSDate+HourSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+HourSpec.mm"; sourceTree = "<group>"; };
 		2DBA1761C8A4FDE14104E1DA /* NSDate+CompareSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+CompareSpec.mm"; sourceTree = "<group>"; };
 		2DBA17B39EE1743EDE5C2409 /* NSDate+DaySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDate+DaySpec.mm"; sourceTree = "<group>"; };
 		2DBA18724F119F0E9B9B20CD /* NSDate+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Time.h"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				2DBA1AA5D53D3D28AA6FA71D /* NSDate+TimeSpec.mm */,
 				2DBA125738A44804D3282A39 /* NSDate+WeekSpec.mm */,
 				2DBA1D5048796BAAC201E374 /* NSDate+YearSpec.mm */,
+				2DBA16E9A7A5A0C0FA04AD2F /* NSDate+HourSpec.mm */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DBA13B86A33723108B6CE74 /* NSDate+Day.m in Sources */,
+				FAE8B2B01B888452006FC74B /* NSDate+HourSpec.mm in Sources */,
 				2DBA11CB980B6EA4EA0BCB42 /* NSDate+Hour.m in Sources */,
 				2DBA18E2A19BAEB826C6F193 /* NSDate+Time.m in Sources */,
 				2DBA11CA8E8106957E0497FF /* NSDate+Week.m in Sources */,
