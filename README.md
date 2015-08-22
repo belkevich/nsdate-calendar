@@ -26,6 +26,8 @@ NSInteger hour = date.hour;                 // 13
 NSInteger minute = date.minute;             // 4
 NSInteger second = date.second;             // 35
 NSUInteger daysInMonth = date.daysInMonth;  // 31
+NSUInteger dayInYear = date.dayInYear;      // 213
+NSUInteger hourInYear = date.hourInYear     // 5102
 ```
 
 ###### Create date from date components
