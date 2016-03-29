@@ -1,8 +1,6 @@
 language: objective-c
 
 before_install:
-        - sudo gem update --system
-        - sudo gem install cocoapods
         - cd Spec
         - pod install
 
