@@ -1,8 +1,8 @@
 PODS:
-  - ABMultiton (2.0.7):
-    - ABMultiton/Core (= 2.0.7)
-  - ABMultiton/Core (2.0.7)
-  - Cedar (0.11.3)
+  - ABMultiton (2.1.0):
+    - ABMultiton/Core (= 2.1.0)
+  - ABMultiton/Core (2.1.0)
+  - Cedar (0.13.0)
   - OCFuntime (0.3.0):
     - OCFuntime/All (= 0.3.0)
   - OCFuntime/All (0.3.0):
@@ -31,8 +31,8 @@ DEPENDENCIES:
   - OCFuntime
 
 SPEC CHECKSUMS:
-  ABMultiton: c580cc9ecd6f0869535241368fdcc44c4f5d141c
-  Cedar: ab1ea4e5c8af4ee4a8fa0452936679861876dc80
+  ABMultiton: 83a56549b17eb7e91488a9d24ab759b84cd9d95d
+  Cedar: 1eb9f7a30039d9aa575bd5728c05fd36326bf12d
   OCFuntime: 24e1062ab33a67780bd2e894214134d702a4eb91
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
