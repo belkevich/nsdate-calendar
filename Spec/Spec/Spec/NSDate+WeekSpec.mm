@@ -120,6 +120,67 @@ describe(@"Date with week", ^
         NSString *dateChanged = [formatter stringFromDate:[date dateByAddingWeek:1]];
         dateChanged should equal(@"08-08-2013 13:04:35");
     });
+
+    it(@"should get local week start date without time for sunday in 'monday-start' calendar", ^
+    {
+        [funtime changeClass:NSCalendar.class classMethod:@selector(currentCalendar) implementation:^
+        {
+            NSCalendar *calendar = [[NSCalendar alloc]
+                                                initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+            calendar.firstWeekday = 2;
+            return calendar;
+        }];
+        date = [formatter dateFromString:@"05-06-2016 19:26:44"]; // sunday
+        NSString *dateWeekStart = [formatter stringFromDate:[date dateWeekStart]];
+        NSString *checkDate = @"30-05-2016 00:00:00";
+        dateWeekStart should equal(checkDate);
+    });
+
+    it(@"should get local week end date without time for sunday in 'monday-start' calendar", ^
+    {
+        [funtime changeClass:NSCalendar.class classMethod:@selector(currentCalendar) implementation:^
+        {
+            NSCalendar *calendar = [[NSCalendar alloc]
+                                                initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+            calendar.firstWeekday = 2;
+            return calendar;
+        }];
+        date = [formatter dateFromString:@"04-06-2016 19:26:44"]; // sunday
+        NSString *dateWeekEnd = [formatter stringFromDate:[date dateWeekEnd]];
+        NSString *checkDate = @"05-06-2016 00:00:00";
+        dateWeekEnd should equal(checkDate);
+    });
+
+    it(@"should get local week start date without time for thursday in 'sunday-start' calendar", ^
+    {
+        [funtime changeClass:NSCalendar.class classMethod:@selector(currentCalendar) implementation:^
+        {
+            NSCalendar *calendar = [[NSCalendar alloc]
+                                                initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+            calendar.firstWeekday = 1;
+            return calendar;
+        }];
+        date = [formatter dateFromString:@"11-06-2016 19:26:44"]; // thursday
+        NSString *dateWeekStart = [formatter stringFromDate:[date dateWeekStart]];
+        NSString *checkDate = @"05-06-2016 00:00:00";
+        dateWeekStart should equal(checkDate);
+    });
+
+    it(@"should get local week end date without time for thursday in 'sunday-start' calendar", ^
+    {
+        [funtime changeClass:NSCalendar.class classMethod:@selector(currentCalendar) implementation:^
+        {
+            NSCalendar *calendar = [[NSCalendar alloc]
+                                                initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+            calendar.firstWeekday = 1;
+            return calendar;
+        }];
+        date = [formatter dateFromString:@"11-06-2016 19:26:44"]; // thursday
+        NSString *dateWeekEnd = [formatter stringFromDate:[date dateWeekEnd]];
+        NSString *checkDate = @"11-06-2016 00:00:00";
+        dateWeekEnd should equal(checkDate);
+    });
+
 });
 
 SPEC_END
