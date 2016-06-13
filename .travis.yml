@@ -1,7 +1,8 @@
 language: objective-c
 
+osx_image: xcode7.3
+
 before_install:
-        - gem update cocoapods
         - cd Spec
         - pod install
 
