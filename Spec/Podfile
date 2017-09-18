@@ -1,4 +1,6 @@
 platform :osx, '10.9'
 
-pod 'Cedar'
-pod 'OCFuntime'
+target 'Spec' do
+  pod 'Cedar'
+  pod 'OCFuntime'
+end
