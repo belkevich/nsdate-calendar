@@ -56,6 +56,13 @@
     return [self dateByAddingWeek:1];
 }
 
+- (NSDate *)dateByAddingWeek:(NSInteger)week
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.weekOfYear = week;
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+}
+
 - (NSDate *)dateBySettingWeekOfYear:(NSInteger)week
 {
     NSDateComponents *components = [self dateComponentsWeekTime];
@@ -74,13 +81,6 @@
 {
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.weekday = weekday - self.weekday;
-    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
-}
-
-- (NSDate *)dateByAddingWeek:(NSInteger)week
-{
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    components.weekOfYear = week;
     return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
 }
 

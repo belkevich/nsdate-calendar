@@ -51,18 +51,18 @@
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
-- (NSDate *)dateBySettingDay:(NSInteger)day
-{
-    NSDateComponents *components = [self dateComponentsDateTime];
-    components.day = day;
-    return [[NSCalendar currentCalendar] dateFromComponents:components];
-}
-
 - (NSDate *)dateByAddingDays:(NSInteger)days
 {
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.day = days;
     return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+}
+
+- (NSDate *)dateBySettingDay:(NSInteger)day
+{
+    NSDateComponents *components = [self dateComponentsDateTime];
+    components.day = day;
+    return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
 @end

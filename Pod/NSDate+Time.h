@@ -14,13 +14,17 @@
 @property (nonatomic, readonly) NSInteger minute;
 @property (nonatomic, readonly) NSInteger second;
 
-- (NSDate *)dateBySettingHour:(NSInteger)hour;
-- (NSDate *)dateBySettingMinute:(NSInteger)minute;
-- (NSDate *)dateBySettingSecond:(NSInteger)second;
-- (NSDate *)dateBySettingHour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
-- (NSDate *)dateByAddingHour:(NSInteger)hour;
-- (NSDate *)dateByAddingMinute:(NSInteger)minute;
-- (NSDate *)dateByAddingSecond:(NSInteger)second;
-- (NSDate *)dateByAddingHour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
+- (nullable NSDate *)dateBySettingHour:(NSInteger)hour;
+- (nullable NSDate *)dateBySettingMinute:(NSInteger)minute;
+- (nullable NSDate *)dateBySettingSecond:(NSInteger)second;
+- (nullable NSDate *)dateBySettingHour:(NSInteger)hour
+                                minute:(NSInteger)minute
+                                second:(NSInteger)second;
+- (nonnull NSDate *)dateByAddingHour:(NSInteger)hour;
+- (nonnull NSDate *)dateByAddingMinute:(NSInteger)minute;
+- (nonnull NSDate *)dateByAddingSecond:(NSInteger)second;
+- (nonnull NSDate *)dateByAddingHour:(NSInteger)hour
+                              minute:(NSInteger)minute
+                              second:(NSInteger)second;
 
 @end

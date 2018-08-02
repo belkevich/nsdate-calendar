@@ -10,8 +10,14 @@
 
 @interface NSDate (DateTime)
 
-+ (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
-+ (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
-                    hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
++ (nullable NSDate *)dateWithYear:(NSInteger)year
+                            month:(NSInteger)month
+                              day:(NSInteger)day;
++ (nullable NSDate *)dateWithYear:(NSInteger)year
+                            month:(NSInteger)month
+                              day:(NSInteger)day
+                             hour:(NSInteger)hour
+                           minute:(NSInteger)minute
+                           second:(NSInteger)second;
 
 @end

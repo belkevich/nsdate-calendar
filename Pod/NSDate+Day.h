@@ -14,10 +14,10 @@
 @property (nonatomic, readonly) NSUInteger daysInMonth;
 @property (nonatomic, readonly) NSUInteger dayInYear;
 
-- (NSDate *)dateToday;
-- (NSDate *)dateYesterday;
-- (NSDate *)dateTomorrow;
-- (NSDate *)dateBySettingDay:(NSInteger)day;
-- (NSDate *)dateByAddingDays:(NSInteger)days;
+- (nonnull NSDate *)dateToday;
+- (nonnull NSDate *)dateYesterday;
+- (nonnull NSDate *)dateTomorrow;
+- (nonnull NSDate *)dateByAddingDays:(NSInteger)days;
+- (nullable NSDate *)dateBySettingDay:(NSInteger)day;
 
 @end

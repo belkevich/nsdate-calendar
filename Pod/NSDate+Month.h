@@ -12,11 +12,11 @@
 
 @property (nonatomic, readonly) NSInteger month;
 
-- (NSDate *)dateMonthStart;
-- (NSDate *)dateMonthEnd;
-- (NSDate *)dateMonthAgo;
-- (NSDate *)dateMonthAhead;
-- (NSDate *)dateBySettingMonth:(NSInteger)month;
-- (NSDate *)dateByAddingMonth:(NSInteger)month;
+- (nonnull NSDate *)dateMonthStart;
+- (nonnull NSDate *)dateMonthEnd;
+- (nonnull NSDate *)dateMonthAgo;
+- (nonnull NSDate *)dateMonthAhead;
+- (nonnull NSDate *)dateByAddingMonth:(NSInteger)month;
+- (nullable NSDate *)dateBySettingMonth:(NSInteger)month;
 
 @end

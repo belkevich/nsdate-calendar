@@ -14,19 +14,19 @@
 
 - (NSDateComponents *)dateComponentsTime
 {
-    NSUInteger components = (NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
+    NSCalendarUnit components = (NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
     return [self dateComponents:components];
 }
 
 - (NSDateComponents *)dateComponentsDate
 {
-    NSUInteger components = (NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear);
+    NSCalendarUnit components = (NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear);
     return [self dateComponents:components];
 }
 
 - (NSDateComponents *)dateComponentsWeek
 {
-    NSUInteger components = (NSCalendarUnitWeekday | NSCalendarUnitWeekOfMonth |
+    NSCalendarUnit components = (NSCalendarUnitWeekday | NSCalendarUnitWeekOfMonth |
                              NSCalendarUnitWeekOfYear | NSCalendarUnitWeekday | NSCalendarUnitYear |
                              NSCalendarUnitYearForWeekOfYear);
     return [self dateComponents:components];
@@ -34,21 +34,21 @@
 
 - (NSDateComponents *)dateComponentsWeekday
 {
-    NSUInteger components = (NSCalendarUnitDay | NSCalendarUnitWeekday | NSCalendarUnitWeekday |
+    NSCalendarUnit components = (NSCalendarUnitDay | NSCalendarUnitWeekday | NSCalendarUnitWeekday |
                              NSCalendarUnitMonth | NSCalendarUnitYear);
     return [self dateComponents:components];
 }
 
 - (NSDateComponents *)dateComponentsDateTime
 {
-    NSUInteger components = (NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear |
+    NSCalendarUnit components = (NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear |
                              NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
     return [self dateComponents:components];
 }
 
 - (NSDateComponents *)dateComponentsWeekTime
 {
-    NSUInteger components = (NSCalendarUnitWeekOfMonth | NSCalendarUnitWeekOfYear |
+    NSCalendarUnit components = (NSCalendarUnitWeekOfMonth | NSCalendarUnitWeekOfYear |
                              NSCalendarUnitWeekday | NSCalendarUnitYear |
                              NSCalendarUnitYearForWeekOfYear | NSCalendarUnitHour |
                              NSCalendarUnitMinute | NSCalendarUnitSecond);
@@ -57,7 +57,7 @@
 
 #pragma mark - private
 
-- (NSDateComponents *)dateComponents:(NSUInteger)components
+- (NSDateComponents *)dateComponents:(NSCalendarUnit)components
 {
     return [[NSCalendar currentCalendar] components:components fromDate:self];
 }

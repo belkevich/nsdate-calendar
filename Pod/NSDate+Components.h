@@ -10,11 +10,11 @@
 
 @interface NSDate (Components)
 
-- (NSDateComponents *)dateComponentsTime;
-- (NSDateComponents *)dateComponentsDate;
-- (NSDateComponents *)dateComponentsWeek;
-- (NSDateComponents *)dateComponentsWeekday;
-- (NSDateComponents *)dateComponentsDateTime;
-- (NSDateComponents *)dateComponentsWeekTime;
+- (nonnull NSDateComponents *)dateComponentsTime;
+- (nonnull NSDateComponents *)dateComponentsDate;
+- (nonnull NSDateComponents *)dateComponentsWeek;
+- (nonnull NSDateComponents *)dateComponentsWeekday;
+- (nonnull NSDateComponents *)dateComponentsDateTime;
+- (nonnull NSDateComponents *)dateComponentsWeekTime;
 
 @end

@@ -12,11 +12,11 @@
 
 @property (nonatomic, readonly) NSInteger year;
 
-- (NSDate *)dateYearStart;
-- (NSDate *)dateYearEnd;
-- (NSDate *)dateYearAgo;
-- (NSDate *)dateYearAhead;
-- (NSDate *)dateBySettingYear:(NSInteger)year;
-- (NSDate *)dateByAddingYear:(NSInteger)year;
+- (nonnull NSDate *)dateYearStart;
+- (nonnull NSDate *)dateYearEnd;
+- (nonnull NSDate *)dateYearAgo;
+- (nonnull NSDate *)dateYearAhead;
+- (nonnull NSDate *)dateByAddingYear:(NSInteger)year;
+- (nullable NSDate *)dateBySettingYear:(NSInteger)year;
 
 @end
